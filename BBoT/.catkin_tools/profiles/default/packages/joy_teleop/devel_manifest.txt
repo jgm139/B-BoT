@@ -1,0 +1,4 @@
+teleop_tools/joy_teleop
+/home/juliagm/Documentos/BBoT/devel/.private/joy_teleop/lib/pkgconfig/joy_teleop.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/joy_teleop.pc
+/home/juliagm/Documentos/BBoT/devel/.private/joy_teleop/share/joy_teleop/cmake/joy_teleopConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/joy_teleop/cmake/joy_teleopConfig.cmake
+/home/juliagm/Documentos/BBoT/devel/.private/joy_teleop/share/joy_teleop/cmake/joy_teleopConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/joy_teleop/cmake/joy_teleopConfig-version.cmake

@@ -1,0 +1,13 @@
+gazebo_ros_pkgs/gazebo_ros
+/home/juliagm/Documentos/BBoT/devel/.private/gazebo_ros/lib/libgazebo_ros_paths_plugin.so /home/juliagm/Documentos/BBoT/devel/lib/libgazebo_ros_paths_plugin.so
+/home/juliagm/Documentos/BBoT/devel/.private/gazebo_ros/lib/libgazebo_ros_api_plugin.so /home/juliagm/Documentos/BBoT/devel/lib/libgazebo_ros_api_plugin.so
+/home/juliagm/Documentos/BBoT/devel/.private/gazebo_ros/lib/pkgconfig/gazebo_ros.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/gazebo_ros.pc
+/home/juliagm/Documentos/BBoT/devel/.private/gazebo_ros/lib/python2.7/dist-packages/gazebo_ros/__init__.py /home/juliagm/Documentos/BBoT/devel/lib/python2.7/dist-packages/gazebo_ros/__init__.py
+/home/juliagm/Documentos/BBoT/devel/.private/gazebo_ros/lib/python2.7/dist-packages/gazebo_ros/cfg/PhysicsConfig.py /home/juliagm/Documentos/BBoT/devel/lib/python2.7/dist-packages/gazebo_ros/cfg/PhysicsConfig.py
+/home/juliagm/Documentos/BBoT/devel/.private/gazebo_ros/lib/python2.7/dist-packages/gazebo_ros/cfg/__init__.py /home/juliagm/Documentos/BBoT/devel/lib/python2.7/dist-packages/gazebo_ros/cfg/__init__.py
+/home/juliagm/Documentos/BBoT/devel/.private/gazebo_ros/include/gazebo_ros/PhysicsConfig.h /home/juliagm/Documentos/BBoT/devel/include/gazebo_ros/PhysicsConfig.h
+/home/juliagm/Documentos/BBoT/devel/.private/gazebo_ros/share/gazebo_ros/cmake/gazebo_rosConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/gazebo_ros/cmake/gazebo_rosConfig.cmake
+/home/juliagm/Documentos/BBoT/devel/.private/gazebo_ros/share/gazebo_ros/cmake/gazebo_rosConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/gazebo_ros/cmake/gazebo_rosConfig-version.cmake
+/home/juliagm/Documentos/BBoT/devel/.private/gazebo_ros/share/gazebo_ros/docs/PhysicsConfig.wikidoc /home/juliagm/Documentos/BBoT/devel/share/gazebo_ros/docs/PhysicsConfig.wikidoc
+/home/juliagm/Documentos/BBoT/devel/.private/gazebo_ros/share/gazebo_ros/docs/PhysicsConfig.dox /home/juliagm/Documentos/BBoT/devel/share/gazebo_ros/docs/PhysicsConfig.dox
+/home/juliagm/Documentos/BBoT/devel/.private/gazebo_ros/share/gazebo_ros/docs/PhysicsConfig-usage.dox /home/juliagm/Documentos/BBoT/devel/share/gazebo_ros/docs/PhysicsConfig-usage.dox

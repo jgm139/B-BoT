@@ -1,0 +1,6 @@
+pal_statistics/pal_statistics
+/home/juliagm/Documentos/BBoT/devel/.private/pal_statistics/lib/libpal_statistics.so /home/juliagm/Documentos/BBoT/devel/lib/libpal_statistics.so
+/home/juliagm/Documentos/BBoT/devel/.private/pal_statistics/lib/pkgconfig/pal_statistics.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/pal_statistics.pc
+/home/juliagm/Documentos/BBoT/devel/.private/pal_statistics/lib/python2.7/dist-packages/pal_statistics/__init__.py /home/juliagm/Documentos/BBoT/devel/lib/python2.7/dist-packages/pal_statistics/__init__.py
+/home/juliagm/Documentos/BBoT/devel/.private/pal_statistics/share/pal_statistics/cmake/pal_statisticsConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/pal_statistics/cmake/pal_statisticsConfig.cmake
+/home/juliagm/Documentos/BBoT/devel/.private/pal_statistics/share/pal_statistics/cmake/pal_statisticsConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/pal_statistics/cmake/pal_statisticsConfig-version.cmake

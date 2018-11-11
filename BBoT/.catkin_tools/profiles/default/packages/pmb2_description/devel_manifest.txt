@@ -1,0 +1,4 @@
+pmb2_robot/pmb2_description
+/home/juliagm/Documentos/BBoT/devel/.private/pmb2_description/lib/pkgconfig/pmb2_description.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/pmb2_description.pc
+/home/juliagm/Documentos/BBoT/devel/.private/pmb2_description/share/pmb2_description/cmake/pmb2_descriptionConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/pmb2_description/cmake/pmb2_descriptionConfig.cmake
+/home/juliagm/Documentos/BBoT/devel/.private/pmb2_description/share/pmb2_description/cmake/pmb2_descriptionConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/pmb2_description/cmake/pmb2_descriptionConfig-version.cmake

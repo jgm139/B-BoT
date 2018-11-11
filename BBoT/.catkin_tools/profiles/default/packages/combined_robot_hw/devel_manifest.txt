@@ -1,0 +1,5 @@
+ros_control/combined_robot_hw
+/home/juliagm/Documentos/BBoT/devel/.private/combined_robot_hw/lib/libcombined_robot_hw.so /home/juliagm/Documentos/BBoT/devel/lib/libcombined_robot_hw.so
+/home/juliagm/Documentos/BBoT/devel/.private/combined_robot_hw/lib/pkgconfig/combined_robot_hw.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/combined_robot_hw.pc
+/home/juliagm/Documentos/BBoT/devel/.private/combined_robot_hw/share/combined_robot_hw/cmake/combined_robot_hwConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/combined_robot_hw/cmake/combined_robot_hwConfig-version.cmake
+/home/juliagm/Documentos/BBoT/devel/.private/combined_robot_hw/share/combined_robot_hw/cmake/combined_robot_hwConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/combined_robot_hw/cmake/combined_robot_hwConfig.cmake

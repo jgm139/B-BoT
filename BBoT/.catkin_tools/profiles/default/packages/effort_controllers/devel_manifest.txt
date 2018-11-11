@@ -1,0 +1,5 @@
+ros_controllers/effort_controllers
+/home/juliagm/Documentos/BBoT/devel/.private/effort_controllers/lib/libeffort_controllers.so /home/juliagm/Documentos/BBoT/devel/lib/libeffort_controllers.so
+/home/juliagm/Documentos/BBoT/devel/.private/effort_controllers/lib/pkgconfig/effort_controllers.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/effort_controllers.pc
+/home/juliagm/Documentos/BBoT/devel/.private/effort_controllers/share/effort_controllers/cmake/effort_controllersConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/effort_controllers/cmake/effort_controllersConfig-version.cmake
+/home/juliagm/Documentos/BBoT/devel/.private/effort_controllers/share/effort_controllers/cmake/effort_controllersConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/effort_controllers/cmake/effort_controllersConfig.cmake

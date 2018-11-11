@@ -1,0 +1,5 @@
+ros_control/rqt_controller_manager
+/home/juliagm/Documentos/BBoT/devel/.private/rqt_controller_manager/lib/pkgconfig/rqt_controller_manager.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/rqt_controller_manager.pc
+/home/juliagm/Documentos/BBoT/devel/.private/rqt_controller_manager/lib/python2.7/dist-packages/rqt_controller_manager/__init__.py /home/juliagm/Documentos/BBoT/devel/lib/python2.7/dist-packages/rqt_controller_manager/__init__.py
+/home/juliagm/Documentos/BBoT/devel/.private/rqt_controller_manager/share/rqt_controller_manager/cmake/rqt_controller_managerConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/rqt_controller_manager/cmake/rqt_controller_managerConfig.cmake
+/home/juliagm/Documentos/BBoT/devel/.private/rqt_controller_manager/share/rqt_controller_manager/cmake/rqt_controller_managerConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/rqt_controller_manager/cmake/rqt_controller_managerConfig-version.cmake

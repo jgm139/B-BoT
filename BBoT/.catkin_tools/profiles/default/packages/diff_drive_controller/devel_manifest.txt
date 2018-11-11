@@ -1,0 +1,14 @@
+ros_controllers/diff_drive_controller
+/home/juliagm/Documentos/BBoT/devel/.private/diff_drive_controller/lib/libdiff_drive_controller.so /home/juliagm/Documentos/BBoT/devel/lib/libdiff_drive_controller.so
+/home/juliagm/Documentos/BBoT/devel/.private/diff_drive_controller/lib/pkgconfig/diff_drive_controller.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/diff_drive_controller.pc
+/home/juliagm/Documentos/BBoT/devel/.private/diff_drive_controller/lib/python2.7/dist-packages/diff_drive_controller/__init__.py /home/juliagm/Documentos/BBoT/devel/lib/python2.7/dist-packages/diff_drive_controller/__init__.py
+/home/juliagm/Documentos/BBoT/devel/.private/diff_drive_controller/lib/python2.7/dist-packages/diff_drive_controller/cfg/__init__.py /home/juliagm/Documentos/BBoT/devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/__init__.py
+/home/juliagm/Documentos/BBoT/devel/.private/diff_drive_controller/lib/python2.7/dist-packages/diff_drive_controller/cfg/DiffDriveControllerConfig.py /home/juliagm/Documentos/BBoT/devel/lib/python2.7/dist-packages/diff_drive_controller/cfg/DiffDriveControllerConfig.py
+/home/juliagm/Documentos/BBoT/devel/.private/diff_drive_controller/lib/diff_drive_controller/skidsteerbot /home/juliagm/Documentos/BBoT/devel/lib/diff_drive_controller/skidsteerbot
+/home/juliagm/Documentos/BBoT/devel/.private/diff_drive_controller/lib/diff_drive_controller/diffbot /home/juliagm/Documentos/BBoT/devel/lib/diff_drive_controller/diffbot
+/home/juliagm/Documentos/BBoT/devel/.private/diff_drive_controller/include/diff_drive_controller/DiffDriveControllerConfig.h /home/juliagm/Documentos/BBoT/devel/include/diff_drive_controller/DiffDriveControllerConfig.h
+/home/juliagm/Documentos/BBoT/devel/.private/diff_drive_controller/share/diff_drive_controller/cmake/diff_drive_controllerConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/diff_drive_controller/cmake/diff_drive_controllerConfig.cmake
+/home/juliagm/Documentos/BBoT/devel/.private/diff_drive_controller/share/diff_drive_controller/cmake/diff_drive_controllerConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/diff_drive_controller/cmake/diff_drive_controllerConfig-version.cmake
+/home/juliagm/Documentos/BBoT/devel/.private/diff_drive_controller/share/diff_drive_controller/docs/DiffDriveControllerConfig.wikidoc /home/juliagm/Documentos/BBoT/devel/share/diff_drive_controller/docs/DiffDriveControllerConfig.wikidoc
+/home/juliagm/Documentos/BBoT/devel/.private/diff_drive_controller/share/diff_drive_controller/docs/DiffDriveControllerConfig-usage.dox /home/juliagm/Documentos/BBoT/devel/share/diff_drive_controller/docs/DiffDriveControllerConfig-usage.dox
+/home/juliagm/Documentos/BBoT/devel/.private/diff_drive_controller/share/diff_drive_controller/docs/DiffDriveControllerConfig.dox /home/juliagm/Documentos/BBoT/devel/share/diff_drive_controller/docs/DiffDriveControllerConfig.dox

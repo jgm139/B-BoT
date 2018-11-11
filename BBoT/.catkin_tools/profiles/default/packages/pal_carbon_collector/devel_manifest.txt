@@ -1,0 +1,5 @@
+pal_statistics/pal_carbon_collector
+/home/juliagm/Documentos/BBoT/devel/.private/pal_carbon_collector/lib/pkgconfig/pal_carbon_collector.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/pal_carbon_collector.pc
+/home/juliagm/Documentos/BBoT/devel/.private/pal_carbon_collector/lib/python2.7/dist-packages/pal_carbon_collector/__init__.py /home/juliagm/Documentos/BBoT/devel/lib/python2.7/dist-packages/pal_carbon_collector/__init__.py
+/home/juliagm/Documentos/BBoT/devel/.private/pal_carbon_collector/share/pal_carbon_collector/cmake/pal_carbon_collectorConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/pal_carbon_collector/cmake/pal_carbon_collectorConfig.cmake
+/home/juliagm/Documentos/BBoT/devel/.private/pal_carbon_collector/share/pal_carbon_collector/cmake/pal_carbon_collectorConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/pal_carbon_collector/cmake/pal_carbon_collectorConfig-version.cmake

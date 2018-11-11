@@ -1,0 +1,4 @@
+ros_controllers/forward_command_controller
+/home/juliagm/Documentos/BBoT/devel/.private/forward_command_controller/lib/pkgconfig/forward_command_controller.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/forward_command_controller.pc
+/home/juliagm/Documentos/BBoT/devel/.private/forward_command_controller/share/forward_command_controller/cmake/forward_command_controllerConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/forward_command_controller/cmake/forward_command_controllerConfig.cmake
+/home/juliagm/Documentos/BBoT/devel/.private/forward_command_controller/share/forward_command_controller/cmake/forward_command_controllerConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/forward_command_controller/cmake/forward_command_controllerConfig-version.cmake
