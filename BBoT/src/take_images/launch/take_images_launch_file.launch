@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="take_images" type="camera_subscriber.py" name="take_images_node" output="screen">
+    </node>
+</launch>
