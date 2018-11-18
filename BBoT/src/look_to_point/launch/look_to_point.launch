@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="look_to_point" type="look_to_point" name="look_to_point" output="screen">
+    </node>
+</launch>

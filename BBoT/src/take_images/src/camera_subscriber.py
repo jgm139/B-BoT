@@ -29,9 +29,11 @@ class TakeImageNode:
                 print("Saving the last photography")
                 self.photo = False
                 cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
+                #cv2.imshow("Image in rgb",cv_image)
+                cv2.waitKey(3)
                 self.lastImageTaken = cv2.resize(cv_image, (self.width, self.height))
                 image_gray = cv2.cvtColor(self.lastImageTaken, cv2.COLOR_BGR2GRAY)
-
+            
                 fileName = "/home/juliagm/Documentos/B-BoT/dataset/Image" + str(self.numImage) + ".png"
 
                 cv2.imwrite(fileName, image_gray)
@@ -75,10 +77,11 @@ class TakeImageNode:
 
 def main(args):
     pygame.init()
-    pygame.display.set_mode((400,400))
+    pygame.display.set_mode((100,100))
     tI = TakeImageNode()
     rospy.init_node('take_images_node')
     tI.run()
+    cv2.destroyAllWindows()
     rospy.spin()
 
 
