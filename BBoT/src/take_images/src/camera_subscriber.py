@@ -48,24 +48,25 @@ class TakeImageNode:
 
         try:
             while not rospy.is_shutdown():
-                keys = pygame.key.get_pressed()
-                
-                if keys[K_UP]:
-                    print("Move up")
-                    move_cmd.linear.x = 0.5
-                elif keys[K_LEFT]:
-                    print("Move left")
-                    move_cmd.angular.z = 0.2
-                elif keys[K_RIGHT]:
-                    print("Move right")
-                    move_cmd.angular.z = -0.2
-                elif keys[K_w]:
-                    print("Take photo")
-                    self.photo = not self.photo
-                elif keys[K_PERIOD]:
-                    break
+                for event in pygame.event.get():
+                    if event.type == QUIT: sys.exit()
 
-                keys = None
+                    if event.type == KEYDOWN and event.key == 119: # W - straight
+                        move_cmd.linear.x += 0.2
+                    elif event.type == KEYDOWN and event.key == 97: # A - left
+                        move_cmd.angular.z += 0.1
+                    elif event.type == KEYDOWN and event.key == 100: # D - right
+                        move_cmd.angular.z += -0.1
+                    elif event.type == KEYDOWN and event.key == 115: # S - back
+                        move_cmd.linear.x += -0.2
+                    elif event.type == KEYDOWN and event.key == 112: # P - take photo
+                        self.photo = not self.photo
+                    elif event.type == KEYDOWN and event.key == 122: # Z - stop
+                        move_cmd.linear.x = 0.0
+                        move_cmd.angular.z = 0.0
+
+
+                pygame.event.pump()
                 self.move.publish(move_cmd)
 
         except KeyboardInterrupt:
