@@ -1,0 +1,7 @@
+ros_control/transmission_interface
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/transmission_interface/lib/libtransmission_interface_loader_plugins.so /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/libtransmission_interface_loader_plugins.so
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/transmission_interface/lib/libtransmission_interface_parser.so /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/libtransmission_interface_parser.so
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/transmission_interface/lib/libtransmission_interface_loader.so /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/libtransmission_interface_loader.so
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/transmission_interface/lib/pkgconfig/transmission_interface.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/transmission_interface.pc
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/transmission_interface/share/transmission_interface/cmake/transmission_interfaceConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/transmission_interface/cmake/transmission_interfaceConfig-version.cmake
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/transmission_interface/share/transmission_interface/cmake/transmission_interfaceConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/transmission_interface/cmake/transmission_interfaceConfig.cmake

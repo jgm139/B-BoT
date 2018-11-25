@@ -1,0 +1,4 @@
+pmb2_simulation/pmb2_gazebo
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pmb2_gazebo/lib/pkgconfig/pmb2_gazebo.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/pmb2_gazebo.pc
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pmb2_gazebo/share/pmb2_gazebo/cmake/pmb2_gazeboConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/pmb2_gazebo/cmake/pmb2_gazeboConfig.cmake
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pmb2_gazebo/share/pmb2_gazebo/cmake/pmb2_gazeboConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/pmb2_gazebo/cmake/pmb2_gazeboConfig-version.cmake

@@ -1,0 +1,4 @@
+gazebo_ros_pkgs/gazebo_dev
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/gazebo_dev/lib/pkgconfig/gazebo_dev.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/gazebo_dev.pc
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/gazebo_dev/share/gazebo_dev/cmake/gazebo_devConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/gazebo_dev/cmake/gazebo_devConfig-version.cmake
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/gazebo_dev/share/gazebo_dev/cmake/gazebo_devConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/gazebo_dev/cmake/gazebo_devConfig.cmake

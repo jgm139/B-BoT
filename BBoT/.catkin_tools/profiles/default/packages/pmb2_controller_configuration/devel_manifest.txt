@@ -1,0 +1,4 @@
+pmb2_robot/pmb2_controller_configuration
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pmb2_controller_configuration/lib/pkgconfig/pmb2_controller_configuration.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/pmb2_controller_configuration.pc
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pmb2_controller_configuration/share/pmb2_controller_configuration/cmake/pmb2_controller_configurationConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/pmb2_controller_configuration/cmake/pmb2_controller_configurationConfig-version.cmake
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pmb2_controller_configuration/share/pmb2_controller_configuration/cmake/pmb2_controller_configurationConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/pmb2_controller_configuration/cmake/pmb2_controller_configurationConfig.cmake

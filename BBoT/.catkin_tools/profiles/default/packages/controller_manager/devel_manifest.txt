@@ -1,0 +1,6 @@
+ros_control/controller_manager
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/controller_manager/lib/libcontroller_manager.so /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/libcontroller_manager.so
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/controller_manager/lib/pkgconfig/controller_manager.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/controller_manager.pc
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/controller_manager/lib/python2.7/dist-packages/controller_manager/__init__.py /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/python2.7/dist-packages/controller_manager/__init__.py
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/controller_manager/share/controller_manager/cmake/controller_managerConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/controller_manager/cmake/controller_managerConfig-version.cmake
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/controller_manager/share/controller_manager/cmake/controller_managerConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/controller_manager/cmake/controller_managerConfig.cmake

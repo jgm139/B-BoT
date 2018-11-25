@@ -1,0 +1,4 @@
+tiago_robot/tiago_bringup
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/tiago_bringup/lib/pkgconfig/tiago_bringup.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/tiago_bringup.pc
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/tiago_bringup/share/tiago_bringup/cmake/tiago_bringupConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/tiago_bringup/cmake/tiago_bringupConfig.cmake
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/tiago_bringup/share/tiago_bringup/cmake/tiago_bringupConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/tiago_bringup/cmake/tiago_bringupConfig-version.cmake

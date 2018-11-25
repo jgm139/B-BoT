@@ -1,0 +1,4 @@
+pmb2_robot/pmb2_bringup
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pmb2_bringup/lib/pkgconfig/pmb2_bringup.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/pmb2_bringup.pc
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pmb2_bringup/share/pmb2_bringup/cmake/pmb2_bringupConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/pmb2_bringup/cmake/pmb2_bringupConfig.cmake
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pmb2_bringup/share/pmb2_bringup/cmake/pmb2_bringupConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/pmb2_bringup/cmake/pmb2_bringupConfig-version.cmake

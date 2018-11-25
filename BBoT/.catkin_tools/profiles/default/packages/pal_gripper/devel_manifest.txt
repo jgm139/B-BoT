@@ -1,0 +1,4 @@
+pal_gripper/pal_gripper
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pal_gripper/lib/pkgconfig/pal_gripper.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/pal_gripper.pc
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pal_gripper/share/pal_gripper/cmake/pal_gripperConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/pal_gripper/cmake/pal_gripperConfig.cmake
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pal_gripper/share/pal_gripper/cmake/pal_gripperConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/pal_gripper/cmake/pal_gripperConfig-version.cmake

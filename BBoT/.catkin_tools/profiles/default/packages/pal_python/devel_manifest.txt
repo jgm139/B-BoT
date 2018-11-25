@@ -1,0 +1,5 @@
+pal_python
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pal_python/lib/pkgconfig/pal_python.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/pal_python.pc
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pal_python/lib/python2.7/dist-packages/pal_python/__init__.py /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/python2.7/dist-packages/pal_python/__init__.py
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pal_python/share/pal_python/cmake/pal_pythonConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/pal_python/cmake/pal_pythonConfig-version.cmake
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pal_python/share/pal_python/cmake/pal_pythonConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/pal_python/cmake/pal_pythonConfig.cmake

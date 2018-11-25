@@ -1,0 +1,4 @@
+tiago_simulation/tiago_multi
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/tiago_multi/lib/pkgconfig/tiago_multi.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/tiago_multi.pc
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/tiago_multi/share/tiago_multi/cmake/tiago_multiConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/tiago_multi/cmake/tiago_multiConfig-version.cmake
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/tiago_multi/share/tiago_multi/cmake/tiago_multiConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/tiago_multi/cmake/tiago_multiConfig.cmake

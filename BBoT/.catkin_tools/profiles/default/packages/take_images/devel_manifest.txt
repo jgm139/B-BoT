@@ -1,0 +1,4 @@
+take_images
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/take_images/lib/pkgconfig/take_images.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/take_images.pc
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/take_images/share/take_images/cmake/take_imagesConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/take_images/cmake/take_imagesConfig.cmake
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/take_images/share/take_images/cmake/take_imagesConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/take_images/cmake/take_imagesConfig-version.cmake

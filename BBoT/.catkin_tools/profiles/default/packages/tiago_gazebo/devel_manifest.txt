@@ -1,0 +1,4 @@
+tiago_simulation/tiago_gazebo
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/tiago_gazebo/lib/pkgconfig/tiago_gazebo.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/tiago_gazebo.pc
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/tiago_gazebo/share/tiago_gazebo/cmake/tiago_gazeboConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/tiago_gazebo/cmake/tiago_gazeboConfig.cmake
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/tiago_gazebo/share/tiago_gazebo/cmake/tiago_gazeboConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/tiago_gazebo/cmake/tiago_gazeboConfig-version.cmake

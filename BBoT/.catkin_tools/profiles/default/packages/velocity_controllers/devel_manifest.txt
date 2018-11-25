@@ -1,0 +1,5 @@
+ros_controllers/velocity_controllers
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/velocity_controllers/lib/libvelocity_controllers.so /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/libvelocity_controllers.so
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/velocity_controllers/lib/pkgconfig/velocity_controllers.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/velocity_controllers.pc
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/velocity_controllers/share/velocity_controllers/cmake/velocity_controllersConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/velocity_controllers/cmake/velocity_controllersConfig.cmake
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/velocity_controllers/share/velocity_controllers/cmake/velocity_controllersConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/velocity_controllers/cmake/velocity_controllersConfig-version.cmake

@@ -1,0 +1,7 @@
+ros_control/controller_manager_tests
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/controller_manager_tests/lib/libcontroller_manager_tests.so /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/libcontroller_manager_tests.so
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/controller_manager_tests/lib/pkgconfig/controller_manager_tests.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/controller_manager_tests.pc
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/controller_manager_tests/lib/python2.7/dist-packages/controller_manager_tests/__init__.py /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/python2.7/dist-packages/controller_manager_tests/__init__.py
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/controller_manager_tests/lib/controller_manager_tests/dummy_app /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/controller_manager_tests/dummy_app
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/controller_manager_tests/share/controller_manager_tests/cmake/controller_manager_testsConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/controller_manager_tests/cmake/controller_manager_testsConfig-version.cmake
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/controller_manager_tests/share/controller_manager_tests/cmake/controller_manager_testsConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/controller_manager_tests/cmake/controller_manager_testsConfig.cmake

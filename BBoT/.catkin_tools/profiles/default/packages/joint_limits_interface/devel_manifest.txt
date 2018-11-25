@@ -1,0 +1,4 @@
+ros_control/joint_limits_interface
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/joint_limits_interface/lib/pkgconfig/joint_limits_interface.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/joint_limits_interface.pc
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/joint_limits_interface/share/joint_limits_interface/cmake/joint_limits_interfaceConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/joint_limits_interface/cmake/joint_limits_interfaceConfig-version.cmake
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/joint_limits_interface/share/joint_limits_interface/cmake/joint_limits_interfaceConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/joint_limits_interface/cmake/joint_limits_interfaceConfig.cmake

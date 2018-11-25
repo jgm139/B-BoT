@@ -1,0 +1,5 @@
+ros_controllers/imu_sensor_controller
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/imu_sensor_controller/lib/libimu_sensor_controller.so /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/libimu_sensor_controller.so
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/imu_sensor_controller/lib/pkgconfig/imu_sensor_controller.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/imu_sensor_controller.pc
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/imu_sensor_controller/share/imu_sensor_controller/cmake/imu_sensor_controllerConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/imu_sensor_controller/cmake/imu_sensor_controllerConfig-version.cmake
+/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/imu_sensor_controller/share/imu_sensor_controller/cmake/imu_sensor_controllerConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/imu_sensor_controller/cmake/imu_sensor_controllerConfig.cmake
