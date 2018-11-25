@@ -1,5 +1,0 @@
-pal_hardware_gazebo
-/home/juliagm/Documentos/BBoT/devel/.private/pal_hardware_gazebo/lib/libpal_hardware_gazebo.so /home/juliagm/Documentos/BBoT/devel/lib/libpal_hardware_gazebo.so
-/home/juliagm/Documentos/BBoT/devel/.private/pal_hardware_gazebo/lib/pkgconfig/pal_hardware_gazebo.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/pal_hardware_gazebo.pc
-/home/juliagm/Documentos/BBoT/devel/.private/pal_hardware_gazebo/share/pal_hardware_gazebo/cmake/pal_hardware_gazeboConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/pal_hardware_gazebo/cmake/pal_hardware_gazeboConfig-version.cmake
-/home/juliagm/Documentos/BBoT/devel/.private/pal_hardware_gazebo/share/pal_hardware_gazebo/cmake/pal_hardware_gazeboConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/pal_hardware_gazebo/cmake/pal_hardware_gazeboConfig.cmake

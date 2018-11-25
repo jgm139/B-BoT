@@ -1,4 +1,0 @@
-pal_gripper/pal_parallel_gripper_wrapper
-/home/juliagm/Documentos/BBoT/devel/.private/pal_parallel_gripper_wrapper/lib/pkgconfig/pal_parallel_gripper_wrapper.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/pal_parallel_gripper_wrapper.pc
-/home/juliagm/Documentos/BBoT/devel/.private/pal_parallel_gripper_wrapper/share/pal_parallel_gripper_wrapper/cmake/pal_parallel_gripper_wrapperConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/pal_parallel_gripper_wrapper/cmake/pal_parallel_gripper_wrapperConfig-version.cmake
-/home/juliagm/Documentos/BBoT/devel/.private/pal_parallel_gripper_wrapper/share/pal_parallel_gripper_wrapper/cmake/pal_parallel_gripper_wrapperConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/pal_parallel_gripper_wrapper/cmake/pal_parallel_gripper_wrapperConfig.cmake

@@ -1,4 +1,0 @@
-ros_control/controller_interface
-/home/juliagm/Documentos/BBoT/devel/.private/controller_interface/lib/pkgconfig/controller_interface.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/controller_interface.pc
-/home/juliagm/Documentos/BBoT/devel/.private/controller_interface/share/controller_interface/cmake/controller_interfaceConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/controller_interface/cmake/controller_interfaceConfig.cmake
-/home/juliagm/Documentos/BBoT/devel/.private/controller_interface/share/controller_interface/cmake/controller_interfaceConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/controller_interface/cmake/controller_interfaceConfig-version.cmake

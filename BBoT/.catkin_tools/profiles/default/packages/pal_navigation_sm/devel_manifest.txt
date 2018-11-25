@@ -1,5 +1,0 @@
-pal_navigation_sm
-/home/juliagm/Documentos/BBoT/devel/.private/pal_navigation_sm/lib/pkgconfig/pal_navigation_sm.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/pal_navigation_sm.pc
-/home/juliagm/Documentos/BBoT/devel/.private/pal_navigation_sm/lib/python2.7/dist-packages/pal_navigation_sm/__init__.py /home/juliagm/Documentos/BBoT/devel/lib/python2.7/dist-packages/pal_navigation_sm/__init__.py
-/home/juliagm/Documentos/BBoT/devel/.private/pal_navigation_sm/share/pal_navigation_sm/cmake/pal_navigation_smConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/pal_navigation_sm/cmake/pal_navigation_smConfig-version.cmake
-/home/juliagm/Documentos/BBoT/devel/.private/pal_navigation_sm/share/pal_navigation_sm/cmake/pal_navigation_smConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/pal_navigation_sm/cmake/pal_navigation_smConfig.cmake

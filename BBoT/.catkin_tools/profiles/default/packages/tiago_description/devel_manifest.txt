@@ -1,4 +1,0 @@
-tiago_robot/tiago_description
-/home/juliagm/Documentos/BBoT/devel/.private/tiago_description/lib/pkgconfig/tiago_description.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/tiago_description.pc
-/home/juliagm/Documentos/BBoT/devel/.private/tiago_description/share/tiago_description/cmake/tiago_descriptionConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/tiago_description/cmake/tiago_descriptionConfig.cmake
-/home/juliagm/Documentos/BBoT/devel/.private/tiago_description/share/tiago_description/cmake/tiago_descriptionConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/tiago_description/cmake/tiago_descriptionConfig-version.cmake

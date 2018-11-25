@@ -18,8 +18,8 @@ class TakeImageNode:
         self.move = rospy.Publisher('/mobile_base_controller/cmd_vel', Twist, queue_size=1)
         self.lastImageTaken = None
         self.numImage = 0
-        self.width = 320
-        self.height = 240
+        self.width = 608
+        self.height = 608
         self.photo = False
 
     def take_images_callback(self, data):
@@ -29,14 +29,14 @@ class TakeImageNode:
                 print("Saving the last photography")
                 self.photo = False
                 cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
-                #cv2.imshow("Image in rgb",cv_image)
+                # cv2.imshow("Image in rgb",cv_image)
                 cv2.waitKey(3)
                 self.lastImageTaken = cv2.resize(cv_image, (self.width, self.height))
-                image_gray = cv2.cvtColor(self.lastImageTaken, cv2.COLOR_BGR2GRAY)
+                # image_gray = cv2.cvtColor(self.lastImageTaken, cv2.COLOR_BGR2GRAY)
             
-                fileName = "/home/juliagm/Documentos/B-BoT/dataset/Image" + str(self.numImage) + ".png"
+                fileName = "/home/juliagm/Documentos/B-BoT/dataset/Images/006/Image" + str(self.numImage) + ".jpg"
 
-                cv2.imwrite(fileName, image_gray)
+                cv2.imwrite(fileName, self.lastImageTaken)
 
                 self.numImage+=1
         except CvBridgeError as e:
@@ -54,19 +54,20 @@ class TakeImageNode:
                     if event.type == QUIT: sys.exit()
 
                     if event.type == KEYDOWN and event.key == 119: # W - straight
-                        move_cmd.linear.x += 0.2
+                        move_cmd.linear.x += 0.5
                     elif event.type == KEYDOWN and event.key == 97: # A - left
-                        move_cmd.angular.z += 0.1
+                        move_cmd.angular.z += 0.25
+                        move_cmd.linear.x = 0.0
                     elif event.type == KEYDOWN and event.key == 100: # D - right
-                        move_cmd.angular.z += -0.1
+                        move_cmd.angular.z += -0.25
                     elif event.type == KEYDOWN and event.key == 115: # S - back
-                        move_cmd.linear.x += -0.2
+                        move_cmd.linear.x += -0.5
+                        move_cmd.linear.x = 0.0
                     elif event.type == KEYDOWN and event.key == 112: # P - take photo
                         self.photo = not self.photo
                     elif event.type == KEYDOWN and event.key == 122: # Z - stop
                         move_cmd.linear.x = 0.0
                         move_cmd.angular.z = 0.0
-
 
                 pygame.event.pump()
                 self.move.publish(move_cmd)

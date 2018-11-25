@@ -1,5 +1,0 @@
-ddynamic_reconfigure_python
-/home/juliagm/Documentos/BBoT/devel/.private/ddynamic_reconfigure_python/lib/pkgconfig/ddynamic_reconfigure_python.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/ddynamic_reconfigure_python.pc
-/home/juliagm/Documentos/BBoT/devel/.private/ddynamic_reconfigure_python/lib/python2.7/dist-packages/ddynamic_reconfigure_python/__init__.py /home/juliagm/Documentos/BBoT/devel/lib/python2.7/dist-packages/ddynamic_reconfigure_python/__init__.py
-/home/juliagm/Documentos/BBoT/devel/.private/ddynamic_reconfigure_python/share/ddynamic_reconfigure_python/cmake/ddynamic_reconfigure_pythonConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/ddynamic_reconfigure_python/cmake/ddynamic_reconfigure_pythonConfig.cmake
-/home/juliagm/Documentos/BBoT/devel/.private/ddynamic_reconfigure_python/share/ddynamic_reconfigure_python/cmake/ddynamic_reconfigure_pythonConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/ddynamic_reconfigure_python/cmake/ddynamic_reconfigure_pythonConfig-version.cmake

@@ -1,5 +1,0 @@
-pal_statistics/pal_statsd_collector
-/home/juliagm/Documentos/BBoT/devel/.private/pal_statsd_collector/lib/pkgconfig/pal_statsd_collector.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/pal_statsd_collector.pc
-/home/juliagm/Documentos/BBoT/devel/.private/pal_statsd_collector/lib/python2.7/dist-packages/pal_statsd_collector/__init__.py /home/juliagm/Documentos/BBoT/devel/lib/python2.7/dist-packages/pal_statsd_collector/__init__.py
-/home/juliagm/Documentos/BBoT/devel/.private/pal_statsd_collector/share/pal_statsd_collector/cmake/pal_statsd_collectorConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/pal_statsd_collector/cmake/pal_statsd_collectorConfig.cmake
-/home/juliagm/Documentos/BBoT/devel/.private/pal_statsd_collector/share/pal_statsd_collector/cmake/pal_statsd_collectorConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/pal_statsd_collector/cmake/pal_statsd_collectorConfig-version.cmake

@@ -1,5 +1,0 @@
-ros_controllers/position_controllers
-/home/juliagm/Documentos/BBoT/devel/.private/position_controllers/lib/libposition_controllers.so /home/juliagm/Documentos/BBoT/devel/lib/libposition_controllers.so
-/home/juliagm/Documentos/BBoT/devel/.private/position_controllers/lib/pkgconfig/position_controllers.pc /home/juliagm/Documentos/BBoT/devel/lib/pkgconfig/position_controllers.pc
-/home/juliagm/Documentos/BBoT/devel/.private/position_controllers/share/position_controllers/cmake/position_controllersConfig.cmake /home/juliagm/Documentos/BBoT/devel/share/position_controllers/cmake/position_controllersConfig.cmake
-/home/juliagm/Documentos/BBoT/devel/.private/position_controllers/share/position_controllers/cmake/position_controllersConfig-version.cmake /home/juliagm/Documentos/BBoT/devel/share/position_controllers/cmake/position_controllersConfig-version.cmake
