@@ -1,5 +1,0 @@
-ros_controllers/force_torque_sensor_controller
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/force_torque_sensor_controller/lib/libforce_torque_sensor_controller.so /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/libforce_torque_sensor_controller.so
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/force_torque_sensor_controller/lib/pkgconfig/force_torque_sensor_controller.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/force_torque_sensor_controller.pc
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/force_torque_sensor_controller/share/force_torque_sensor_controller/cmake/force_torque_sensor_controllerConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/force_torque_sensor_controller/cmake/force_torque_sensor_controllerConfig-version.cmake
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/force_torque_sensor_controller/share/force_torque_sensor_controller/cmake/force_torque_sensor_controllerConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/force_torque_sensor_controller/cmake/force_torque_sensor_controllerConfig.cmake

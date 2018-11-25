@@ -1,5 +1,0 @@
-backward_ros
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/backward_ros/lib/libbackward.so /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/libbackward.so
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/backward_ros/lib/pkgconfig/backward_ros.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/backward_ros.pc
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/backward_ros/share/backward_ros/cmake/backward_rosConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/backward_ros/cmake/backward_rosConfig.cmake
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/backward_ros/share/backward_ros/cmake/backward_rosConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/backward_ros/cmake/backward_rosConfig-version.cmake

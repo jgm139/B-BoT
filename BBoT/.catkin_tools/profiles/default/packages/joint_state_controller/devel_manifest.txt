@@ -1,5 +1,0 @@
-ros_controllers/joint_state_controller
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/joint_state_controller/lib/libjoint_state_controller.so /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/libjoint_state_controller.so
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/joint_state_controller/lib/pkgconfig/joint_state_controller.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/joint_state_controller.pc
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/joint_state_controller/share/joint_state_controller/cmake/joint_state_controllerConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/joint_state_controller/cmake/joint_state_controllerConfig-version.cmake
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/joint_state_controller/share/joint_state_controller/cmake/joint_state_controllerConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/joint_state_controller/cmake/joint_state_controllerConfig.cmake

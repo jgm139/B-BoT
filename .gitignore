@@ -1,4 +1,5 @@
 BBoT/logs
 BBoT/build
 BBoT/devel
+BBoT/.catkin_tools/*
 .vscode

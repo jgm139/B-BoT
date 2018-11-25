@@ -1,6 +1,0 @@
-ros_control/combined_robot_hw_tests
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/combined_robot_hw_tests/lib/libcombined_robot_hw_tests.so /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/libcombined_robot_hw_tests.so
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/combined_robot_hw_tests/lib/combined_robot_hw_tests/combined_robot_hw_dummy_app /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/combined_robot_hw_tests/combined_robot_hw_dummy_app
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/combined_robot_hw_tests/lib/pkgconfig/combined_robot_hw_tests.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/combined_robot_hw_tests.pc
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/combined_robot_hw_tests/share/combined_robot_hw_tests/cmake/combined_robot_hw_testsConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/combined_robot_hw_tests/cmake/combined_robot_hw_testsConfig.cmake
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/combined_robot_hw_tests/share/combined_robot_hw_tests/cmake/combined_robot_hw_testsConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/combined_robot_hw_tests/cmake/combined_robot_hw_testsConfig-version.cmake

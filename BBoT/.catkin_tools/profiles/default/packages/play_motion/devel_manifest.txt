@@ -1,9 +1,0 @@
-play_motion/play_motion
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/play_motion/lib/libplay_motion_helpers.so /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/libplay_motion_helpers.so
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/play_motion/lib/pkgconfig/play_motion.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/play_motion.pc
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/play_motion/lib/play_motion/play_motion /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/play_motion/play_motion
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/play_motion/lib/play_motion/pm_rrbot /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/play_motion/pm_rrbot
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/play_motion/lib/play_motion/run_motion /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/play_motion/run_motion
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/play_motion/lib/python2.7/dist-packages/play_motion/__init__.py /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/python2.7/dist-packages/play_motion/__init__.py
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/play_motion/share/play_motion/cmake/play_motionConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/play_motion/cmake/play_motionConfig-version.cmake
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/play_motion/share/play_motion/cmake/play_motionConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/play_motion/cmake/play_motionConfig.cmake

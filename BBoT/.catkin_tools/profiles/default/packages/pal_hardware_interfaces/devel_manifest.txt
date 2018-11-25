@@ -1,4 +1,0 @@
-pal_hardware_interfaces
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pal_hardware_interfaces/lib/pkgconfig/pal_hardware_interfaces.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/pal_hardware_interfaces.pc
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pal_hardware_interfaces/share/pal_hardware_interfaces/cmake/pal_hardware_interfacesConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/pal_hardware_interfaces/cmake/pal_hardware_interfacesConfig.cmake
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pal_hardware_interfaces/share/pal_hardware_interfaces/cmake/pal_hardware_interfacesConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/pal_hardware_interfaces/cmake/pal_hardware_interfacesConfig-version.cmake

@@ -1,5 +1,0 @@
-ros_controllers/rqt_joint_trajectory_controller
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/rqt_joint_trajectory_controller/lib/pkgconfig/rqt_joint_trajectory_controller.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/rqt_joint_trajectory_controller.pc
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/rqt_joint_trajectory_controller/lib/python2.7/dist-packages/rqt_joint_trajectory_controller/__init__.py /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/python2.7/dist-packages/rqt_joint_trajectory_controller/__init__.py
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/rqt_joint_trajectory_controller/share/rqt_joint_trajectory_controller/cmake/rqt_joint_trajectory_controllerConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/rqt_joint_trajectory_controller/cmake/rqt_joint_trajectory_controllerConfig-version.cmake
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/rqt_joint_trajectory_controller/share/rqt_joint_trajectory_controller/cmake/rqt_joint_trajectory_controllerConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/rqt_joint_trajectory_controller/cmake/rqt_joint_trajectory_controllerConfig.cmake

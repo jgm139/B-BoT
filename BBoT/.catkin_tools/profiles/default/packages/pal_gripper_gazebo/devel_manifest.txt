@@ -1,4 +1,0 @@
-pal_gripper/pal_gripper_gazebo
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pal_gripper_gazebo/lib/pkgconfig/pal_gripper_gazebo.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/pal_gripper_gazebo.pc
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pal_gripper_gazebo/share/pal_gripper_gazebo/cmake/pal_gripper_gazeboConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/pal_gripper_gazebo/cmake/pal_gripper_gazeboConfig-version.cmake
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/pal_gripper_gazebo/share/pal_gripper_gazebo/cmake/pal_gripper_gazeboConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/pal_gripper_gazebo/cmake/pal_gripper_gazeboConfig.cmake

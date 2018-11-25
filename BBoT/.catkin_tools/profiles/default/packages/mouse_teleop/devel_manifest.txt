@@ -1,4 +1,0 @@
-teleop_tools/mouse_teleop
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/mouse_teleop/lib/pkgconfig/mouse_teleop.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/mouse_teleop.pc
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/mouse_teleop/share/mouse_teleop/cmake/mouse_teleopConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/mouse_teleop/cmake/mouse_teleopConfig-version.cmake
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/mouse_teleop/share/mouse_teleop/cmake/mouse_teleopConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/mouse_teleop/cmake/mouse_teleopConfig.cmake

@@ -1,4 +1,0 @@
-teleop_tools/key_teleop
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/key_teleop/lib/pkgconfig/key_teleop.pc /home/juliagm/Documentos/B-BoT/BBoT/devel/lib/pkgconfig/key_teleop.pc
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/key_teleop/share/key_teleop/cmake/key_teleopConfig.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/key_teleop/cmake/key_teleopConfig.cmake
-/home/juliagm/Documentos/B-BoT/BBoT/devel/.private/key_teleop/share/key_teleop/cmake/key_teleopConfig-version.cmake /home/juliagm/Documentos/B-BoT/BBoT/devel/share/key_teleop/cmake/key_teleopConfig-version.cmake
