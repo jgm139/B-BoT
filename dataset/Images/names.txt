@@ -1,0 +1,6 @@
+coke_can
+bowl
+beer
+table
+wall
+seat
