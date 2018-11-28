@@ -34,7 +34,7 @@ class TakeImageNode:
                 self.lastImageTaken = cv2.resize(cv_image, (self.width, self.height))
                 # image_gray = cv2.cvtColor(self.lastImageTaken, cv2.COLOR_BGR2GRAY)
             
-                fileName = "/home/juliagm/Documentos/B-BoT/dataset/Images/006/Image" + str(self.numImage) + ".jpg"
+                fileName = "/home/juliagm/Documentos/B-BoT/dataset/Images/007/Image" + str(self.numImage) + ".jpg"
 
                 cv2.imwrite(fileName, self.lastImageTaken)
 

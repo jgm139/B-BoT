@@ -4,3 +4,4 @@ beer
 table
 wall
 seat
+bookshelf
