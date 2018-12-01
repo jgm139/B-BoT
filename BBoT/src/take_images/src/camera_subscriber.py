@@ -78,7 +78,7 @@ class TakeImageNode:
 
 def main(args):
     pygame.init()
-    pygame.display.set_mode((100,100))
+    pygame.display.set_mode((200,200))
     tI = TakeImageNode()
     rospy.init_node('take_images_node')
     tI.run()
