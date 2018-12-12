@@ -1,0 +1,3 @@
+./Images/008/Image16.jpg
+./Images/008/Image23.jpg
+./Images/008/Image4.jpg
