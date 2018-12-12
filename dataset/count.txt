@@ -1,0 +1,10 @@
+coke_can --> 130
+bowl --> 108
+beer --> 88
+table --> 210
+ball -->
+seat --> 59
+bookshelf --> 36
+pringles --> 35
+bifrutas -->
+biscuits_pack -->
