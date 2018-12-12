@@ -1,5 +1,5 @@
 coke_can --> 130
-bowl --> 108
+bowl --> 130
 beer --> 88
 table --> 210
 ball -->

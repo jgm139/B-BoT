@@ -18,7 +18,7 @@ class TakeImageNode:
         self.move = rospy.Publisher('/mobile_base_controller/cmd_vel', Twist, queue_size=1)
         self.rate = rospy.Rate(5)
         self.lastImageTaken = None
-        self.numImage = 86
+        self.numImage = 109
         self.width = 608
         self.height = 608
         self.photo = False
@@ -28,7 +28,6 @@ class TakeImageNode:
    
         try:
             if self.photo:
-                print("Saving the last photography")
 
                 if not self.loop:
                     self.photo = False
@@ -38,8 +37,8 @@ class TakeImageNode:
                 self.lastImageTaken = cv2.resize(cv_image, (self.width, self.height))
                 # image_gray = cv2.cvtColor(self.lastImageTaken, cv2.COLOR_BGR2GRAY)
             
-                fileName = "/home/juliagm/Documentos/B-BoT/dataset/Images/002/Image" + str(self.numImage) + ".jpg"
-
+                fileName = "/home/juliagm/Documentos/B-BoT/dataset/Images/003/Image" + str(self.numImage) + ".jpg"
+                print("Saving the last photography " + fileName)
                 cv2.imwrite(fileName, self.lastImageTaken)
 
                 self.numImage+=1
