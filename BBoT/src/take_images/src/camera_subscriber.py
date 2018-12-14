@@ -18,7 +18,7 @@ class TakeImageNode:
         self.move = rospy.Publisher('/mobile_base_controller/cmd_vel', Twist, queue_size=1)
         self.rate = rospy.Rate(5)
         self.lastImageTaken = None
-        self.numImage = 36
+        self.numImage = 74
         self.width = 608
         self.height = 608
         self.photo = False

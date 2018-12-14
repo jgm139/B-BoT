@@ -4,7 +4,7 @@ beer --> 130
 table --> 210
 ball --> 90
 seat --> 95
-bookshelf --> 75
-pringles --> 35
+bookshelf --> 85
+pringles --> 100
 bifrutas -->
 biscuits_pack -->
