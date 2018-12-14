@@ -1,8 +1,8 @@
 coke_can --> 130
 bowl --> 130
-beer --> 88
+beer --> 130
 table --> 210
-ball -->
+ball --> 90
 seat --> 59
 bookshelf --> 36
 pringles --> 35
