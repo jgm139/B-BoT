@@ -3,8 +3,8 @@ bowl --> 130
 beer --> 130
 table --> 210
 ball --> 90
-seat --> 95
-bookshelf --> 85
+seat --> 105
+bookshelf --> 130
 pringles --> 100
-bifrutas -->
-biscuits_pack -->
+bifrutas --> 115
+biscuits_pack --> 100
