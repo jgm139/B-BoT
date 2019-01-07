@@ -1,8 +1,0 @@
-./Images/003/Image1319.jpg
-./Images/003/Image17.jpg
-./Images/003/Image38.jpg
-./Images/003/Image36.jpg
-./Images/003/Image8327.jpg
-./Images/003/Image25.jpg
-./Images/003/Image4.jpg
-./Images/003/Image4351.jpg
