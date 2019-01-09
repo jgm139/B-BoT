@@ -1,5 +1,5 @@
-coke_can --> 130
-beer --> 130
+coke_can --> 400
+beer --> 400
 pringles --> 100
 bifrutas --> 115
 biscuits_pack --> 100
