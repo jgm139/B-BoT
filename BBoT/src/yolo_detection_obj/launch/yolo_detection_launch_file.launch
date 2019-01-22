@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="yolo_detection_obj" type="detection_objects.py" name="yolo_detection_node" output="screen">
+    </node>
+</launch>
