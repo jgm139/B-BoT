@@ -1,5 +1,5 @@
 string[] names
-float32[] x
-float32[] y
+float32[] xn
+float32[] yn
 float32[] widths
 float32[] heights

@@ -29,6 +29,6 @@ include_directories(
 )
 
 install(PROGRAMS
-  scripts/my_python_script
+  scripts/detection_objects.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

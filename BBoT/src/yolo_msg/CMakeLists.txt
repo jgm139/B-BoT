@@ -3,6 +3,7 @@ project(yolo_msg)
 
 find_package(
     catkin REQUIRED
+    rospy
     std_msgs
     message_generation
 )
