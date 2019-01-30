@@ -3,6 +3,7 @@
 import rospy
 import cv2
 import os, sys
+import numpy as np
 
 from sensor_msgs.msg import Image
 from yolo_msg.msg import MSGYolo
@@ -22,6 +23,9 @@ Xi_YOLO = 0
 Yi_YOLO = 1
 Wi_YOLO = 2
 Hi_YOLO = 3
+
+# Generate different colors for different classes 
+COLORS = {'coke_can': (255,0,0), 'beer': (0,255,0), 'pringles': (0,0,255)}
 
 sys.path.append(REPOSITORY+INCLUDE_DARKNET)
 
@@ -55,7 +59,7 @@ class TinyYolo:
             self.currentImage = self.bridge.imgmsg_to_cv2(data, "bgr8")
             cv2.imwrite(self.filenameImage, self.currentImage)
         except CvBridgeError as e:
-            print(e)
+            print("EXCEPTION: "+e)
 
     def run(self):
         while not rospy.is_shutdown():
@@ -63,10 +67,16 @@ class TinyYolo:
                 detection = dn.detect(self.tiny_yolo_net, self.tiny_yolo_meta, self.filenameImage)
                 print detection
                 
-                onames = xn = yn = widths = heights = []
+                onames = []
+                predictions = []
+                xn = []
+                yn = []
+                widths = []
+                heights = []
 
                 for objDetect in range(len(detection)):
                     onames.append(detection[objDetect][NAME_YOLO])
+                    predictions.append(detection[objDetect][PRECISION_YOLO])
                     
                     xn.append(detection[objDetect][ARRAY_OBJECT_DETECT][Xi_YOLO])
                     yn.append(detection[objDetect][ARRAY_OBJECT_DETECT][Yi_YOLO])
@@ -84,14 +94,17 @@ class TinyYolo:
 
                 for i in range(0, len(onames)):
                     name = onames[i]
-                    print type(xn[i])
+                    
                     p1 = (int(xn[i]-(widths[i]/2)), int(yn[i]-(heights[i]/2)))
                     p2 = (int(xn[i]+(widths[i]/2)), int(yn[i]+(heights[i]/2)))
+                    pname = (int(xn[i]+(widths[i]/2)), int(yn[i]-(heights[i]/2)-5))
 
-                    cv2.rectangle(self.currentImage, p1, p2, (0,0,0))
+                    cv2.rectangle(self.currentImage, p1, p2, COLORS[name], 2)
+                    cv2.putText(self.currentImage, name, pname, cv2.FONT_HERSHEY_SIMPLEX, 0.5, COLORS[name])
 
                 cv2.imshow('tiny yolo detect', self.currentImage)
                 cv2.waitKey(1)
+                self.rate.sleep()
 
 
 def main(args):
