@@ -1,3 +1,0 @@
-temperature_sensor_controller:
-  type: temperature_sensor_controller/TemperatureSensorController
-  publish_rate: 100

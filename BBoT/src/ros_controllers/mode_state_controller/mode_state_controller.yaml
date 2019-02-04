@@ -1,3 +1,0 @@
-mode_state_controller:
-  type: mode_state_controller/ModeStateController
-  publish_rate: 100

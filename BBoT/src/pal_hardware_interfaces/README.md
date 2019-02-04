@@ -1,1 +1,0 @@
-[![Build Status](http://venus:8080/job/I40-pal_hardware_interfaces-dubnium-devel_dubnium/badge/icon)](http://venus:8080/job/I40-pal_hardware_interfaces-dubnium-devel_dubnium/)

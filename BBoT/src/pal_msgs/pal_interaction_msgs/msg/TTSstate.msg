@@ -1,2 +1,0 @@
-bool isSpeaking
-string text

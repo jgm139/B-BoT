@@ -1,4 +1,0 @@
----
-bool enrollment_ok
-int32 numFacesEnrolled
-string error_msg

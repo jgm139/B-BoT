@@ -1,3 +1,0 @@
-<launch>
-    <test test-name="statsd_collector_test" pkg="pal_statsd_collector" type="statsd_collector_test.py" />
-</launch>
