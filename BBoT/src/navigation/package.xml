@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>navigation</name>
+  <version>0.0.0</version>
+  <description>The navigation package</description>
+
+  <maintainer email="juliagm@todo.todo">juliagm</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>tiago_gazebo</exec_depend>
+  <exec_depend>tiago_2dnav</exec_depend>
+  
+</package>
