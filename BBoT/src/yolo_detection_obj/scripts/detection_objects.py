@@ -6,6 +6,8 @@ import os, sys
 import numpy as np
 
 from sensor_msgs.msg import Image
+from geometry_msgs.msg import PoseStamped
+from gazebo_msgs.msg import ModelStates
 from yolo_msg.msg import MSGYolo
 from cv_bridge import CvBridge, CvBridgeError
 
@@ -37,6 +39,8 @@ class TinyYolo:
         self.bridge = CvBridge()
         self.sub = rospy.Subscriber('/xtion/rgb/image_raw', Image, self.take_images_callback)
         self.pub = rospy.Publisher('detection/obj', MSGYolo, queue_size=1)
+        self.sub2 = rospy.Subscriber('/gazebo/model_states', ModelStates, self.take_pose_gazebo_callback)
+        self.pub2 = rospy.Publisher('gazebo_pose/obj', PoseStamped, queue_size=1)
 
         self.path_cfg = REPOSITORY + INCLUDE_DARKNET + "yolov3-tiny.cfg"
         self.path_weights = REPOSITORY + INCLUDE_DARKNET + "yolov3-tiny_27200.weights"
@@ -46,6 +50,8 @@ class TinyYolo:
         self.filenameImage = REPOSITORY + "BBoT/src/assets/prediction.jpg"
         self.tiny_yolo_net = None
         self.tiny_yolo_meta = None
+
+        self.objPoseStamped = PoseStamped()
     
         self.tiny_yolo()
         self.rate = rospy.Rate(5)
@@ -61,11 +67,20 @@ class TinyYolo:
         except CvBridgeError as e:
             print("EXCEPTION: "+e)
 
+    def take_pose_gazebo_callback(self, data):
+        print("pose data")
+        
+        if any("cocacola" in s for s in data.name):
+            index_name = data.name.index("cocacola")
+            self.objPoseStamped.header.stamp = rospy.Time.now()
+            self.objPoseStamped.header.frame_id = "map"
+            self.objPoseStamped.pose = data.pose[index_name]
+            self.pub2.publish(self.objPoseStamped)
+
     def run(self):
         while not rospy.is_shutdown():
             if(self.currentImage is not None):
                 detection = dn.detect(self.tiny_yolo_net, self.tiny_yolo_meta, self.filenameImage)
-                print detection
                 
                 onames = []
                 predictions = []
@@ -74,14 +89,21 @@ class TinyYolo:
                 widths = []
                 heights = []
 
+                print("=============================================")
                 for objDetect in range(len(detection)):
+                    print("DETECTED OBJECT: " + str(detection[objDetect][NAME_YOLO]))
+                    print("PREDICTION: " + str(detection[objDetect][PRECISION_YOLO]*100) + "%")
                     onames.append(detection[objDetect][NAME_YOLO])
                     predictions.append(detection[objDetect][PRECISION_YOLO])
-                    
+
+                    print("x: " + str(detection[objDetect][ARRAY_OBJECT_DETECT][Xi_YOLO]) + " / y: " + str(detection[objDetect][ARRAY_OBJECT_DETECT][Yi_YOLO]))
+                    print("W: " + str(detection[objDetect][ARRAY_OBJECT_DETECT][Wi_YOLO]) + " / H: " + str(detection[objDetect][ARRAY_OBJECT_DETECT][Hi_YOLO]))
+
                     xn.append(detection[objDetect][ARRAY_OBJECT_DETECT][Xi_YOLO])
                     yn.append(detection[objDetect][ARRAY_OBJECT_DETECT][Yi_YOLO])
                     widths.append(detection[objDetect][ARRAY_OBJECT_DETECT][Wi_YOLO])
                     heights.append(detection[objDetect][ARRAY_OBJECT_DETECT][Hi_YOLO])
+                    print("=============================================")
 
                     data = MSGYolo()
                     data.names = onames
