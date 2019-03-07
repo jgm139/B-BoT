@@ -9,6 +9,9 @@ from geometry_msgs.msg import PoseStamped
 from gazebo_msgs.msg import ModelStates
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 
+globalPosePoint = PoseStamped()
+obtein = False
+
 def move_to_point_client():
 
     print("Action client...")
@@ -17,11 +20,13 @@ def move_to_point_client():
     client.wait_for_server()
 
     goal = MoveBaseGoal()
+
+    print(globalPosePoint)
     
     goal.target_pose.header.frame_id = "map"
     goal.target_pose.header.stamp = rospy.Time.now()
-    goal.target_pose.pose.position.x = 1.5
-    goal.target_pose.pose.position.y = 0
+    goal.target_pose.pose.position.x = -3
+    goal.target_pose.pose.position.y = 3
     goal.target_pose.pose.position.z = 0
     goal.target_pose.pose.orientation.x = 0
     goal.target_pose.pose.orientation.y = 0
@@ -46,16 +51,26 @@ def move_to_point_client():
             rospy.loginfo("Goal execution done!")
 
 def get_pose(data):
-      
+    global obtein
+    global globalPosePoint
+
+    if not obtein:
+        rospy.loginfo("Obtaining data of gazebo/obj...")
+        print(data)
+        globalPosePoint = data   
+        obtein = True
+        move_to_point_client()
     
 
 def listener_to_detection():
-    sub = rospy.Subscriber("gazebo_pose/obj", PoseStamped, get_pose)
+    sub = rospy.Subscriber("gazebo_pose/obj", PoseStamped, get_pose, queue_size=1)
+
 
 def main(args):
     try:
         rospy.init_node('move_to_point_node')
-        listener_to_detection()
+
+        #listener_to_detection()
         move_to_point_client()
 
     except rospy.ROSInterruptException:
