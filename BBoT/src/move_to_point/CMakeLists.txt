@@ -8,7 +8,9 @@ project(move_to_point)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  actionlib
   geometry_msgs
+  move_base_msgs
   rospy
 )
 
@@ -69,7 +71,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate added messages and services with any dependencies listed here
 # generate_messages(
 #   DEPENDENCIES
-#   geometry_msgs
+#   geometry_msgs#   move_base_msgs
 # )
 
 ################################################
@@ -104,7 +106,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES move_to_point
-#  CATKIN_DEPENDS geometry_msgs rospy
+#  CATKIN_DEPENDS actionlib geometry_msgs move_base_msgs rospy
 #  DEPENDS system_lib
 )
 

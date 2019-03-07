@@ -68,7 +68,6 @@ class TinyYolo:
             print("EXCEPTION: "+e)
 
     def take_pose_gazebo_callback(self, data):
-        print("pose data")
         
         if any("cocacola" in s for s in data.name):
             index_name = data.name.index("cocacola")
