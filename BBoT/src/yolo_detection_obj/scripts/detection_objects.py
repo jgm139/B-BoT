@@ -40,7 +40,7 @@ class TinyYolo:
         self.sub = rospy.Subscriber('/xtion/rgb/image_raw', Image, self.take_images_callback)
         self.pub = rospy.Publisher('detection/obj', MSGYolo, queue_size=1)
         self.sub2 = rospy.Subscriber('/gazebo/model_states', ModelStates, self.take_pose_gazebo_callback)
-        self.pub2 = rospy.Publisher('gazebo_pose/obj', PoseStamped, queue_size=1)
+        #self.pub2 = rospy.Publisher('gazebo_pose/obj', PoseStamped, queue_size=1)
 
         self.path_cfg = REPOSITORY + INCLUDE_DARKNET + "yolov3-tiny.cfg"
         self.path_weights = REPOSITORY + INCLUDE_DARKNET + "yolov3-tiny_27200.weights"
@@ -74,7 +74,9 @@ class TinyYolo:
             self.objPoseStamped.header.stamp = rospy.Time.now()
             self.objPoseStamped.header.frame_id = "map"
             self.objPoseStamped.pose = data.pose[index_name]
-            self.pub2.publish(self.objPoseStamped)
+            #self.pub2.publish(self.objPoseStamped)
+            if not rospy.has_param('gazebo/obj'):
+                rospy.set_param('gazebo/obj', {'position':{'x':self.objPoseStamped.pose.position.x, 'y':self.objPoseStamped.pose.position.y, 'z':self.objPoseStamped.pose.position.z}, 'orientation':{'x':self.objPoseStamped.pose.orientation.x, 'y':self.objPoseStamped.pose.orientation.y, 'z':self.objPoseStamped.pose.orientation.z, 'w':self.objPoseStamped.pose.orientation.w}})
 
     def run(self):
         while not rospy.is_shutdown():
