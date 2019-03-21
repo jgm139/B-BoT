@@ -1,18 +1,18 @@
 #! /usr/bin/env python
- 
 import rospy
 import cv2
 import os, sys
-import numpy as np
 
 from sensor_msgs.msg import Image
-from geometry_msgs.msg import PoseStamped
-from gazebo_msgs.msg import ModelStates
 from yolo_msg.msg import MSGYolo
 from cv_bridge import CvBridge, CvBridgeError
 
 REPOSITORY = "/home/juliagm/Documentos/B-BoT/"
 INCLUDE_DARKNET = "include/darknet/"
+
+sys.path.append(REPOSITORY+INCLUDE_DARKNET)
+
+import darknet as dn
 
 # Array que devuelve la posicion de la funcion detect
 # (name, precision, array_objeto_detectado)
@@ -29,29 +29,23 @@ Hi_YOLO = 3
 # Generate different colors for different classes 
 COLORS = {'coke_can': (255,0,0), 'beer': (0,255,0), 'pringles': (0,0,255)}
 
-sys.path.append(REPOSITORY+INCLUDE_DARKNET)
-
-import darknet as dn
-
 class TinyYolo:
 
     def __init__(self):
         self.bridge = CvBridge()
+
         self.sub = rospy.Subscriber('/xtion/rgb/image_raw', Image, self.take_images_callback)
-        self.pub = rospy.Publisher('detection/obj', MSGYolo, queue_size=1)
-        self.sub2 = rospy.Subscriber('/gazebo/model_states', ModelStates, self.take_pose_gazebo_callback)
-        #self.pub2 = rospy.Publisher('gazebo_pose/obj', PoseStamped, queue_size=1)
+        self.pub = rospy.Publisher('/detection/obj', MSGYolo, queue_size=1)
 
         self.path_cfg = REPOSITORY + INCLUDE_DARKNET + "yolov3-tiny.cfg"
         self.path_weights = REPOSITORY + INCLUDE_DARKNET + "yolov3-tiny_27200.weights"
         self.path_data = REPOSITORY + INCLUDE_DARKNET + "data/obj.data"
+        self.filenameImage = REPOSITORY + "BBoT/src/assets/prediction.jpg"
 
         self.currentImage = None
-        self.filenameImage = REPOSITORY + "BBoT/src/assets/prediction.jpg"
+
         self.tiny_yolo_net = None
         self.tiny_yolo_meta = None
-
-        self.objPoseStamped = PoseStamped()
     
         self.tiny_yolo()
         self.rate = rospy.Rate(5)
@@ -65,19 +59,8 @@ class TinyYolo:
             self.currentImage = self.bridge.imgmsg_to_cv2(data, "bgr8")
             cv2.imwrite(self.filenameImage, self.currentImage)
         except CvBridgeError as e:
-            print("EXCEPTION: "+e)
-
-    def take_pose_gazebo_callback(self, data):
-        
-        if any("cocacola" in s for s in data.name):
-            index_name = data.name.index("cocacola")
-            self.objPoseStamped.header.stamp = rospy.Time.now()
-            self.objPoseStamped.header.frame_id = "map"
-            self.objPoseStamped.pose = data.pose[index_name]
-            #self.pub2.publish(self.objPoseStamped)
-            if not rospy.has_param('gazebo/obj'):
-                rospy.set_param('gazebo/obj', {'position':{'x':self.objPoseStamped.pose.position.x, 'y':self.objPoseStamped.pose.position.y, 'z':self.objPoseStamped.pose.position.z}, 'orientation':{'x':self.objPoseStamped.pose.orientation.x, 'y':self.objPoseStamped.pose.orientation.y, 'z':self.objPoseStamped.pose.orientation.z, 'w':self.objPoseStamped.pose.orientation.w}})
-
+            rospy.logerr(e)
+  
     def run(self):
         while not rospy.is_shutdown():
             if(self.currentImage is not None):
@@ -98,7 +81,7 @@ class TinyYolo:
                     predictions.append(detection[objDetect][PRECISION_YOLO])
 
                     print("x: " + str(detection[objDetect][ARRAY_OBJECT_DETECT][Xi_YOLO]) + " / y: " + str(detection[objDetect][ARRAY_OBJECT_DETECT][Yi_YOLO]))
-                    print("W: " + str(detection[objDetect][ARRAY_OBJECT_DETECT][Wi_YOLO]) + " / H: " + str(detection[objDetect][ARRAY_OBJECT_DETECT][Hi_YOLO]))
+                    print("w: " + str(detection[objDetect][ARRAY_OBJECT_DETECT][Wi_YOLO]) + " / h: " + str(detection[objDetect][ARRAY_OBJECT_DETECT][Hi_YOLO]))
 
                     xn.append(detection[objDetect][ARRAY_OBJECT_DETECT][Xi_YOLO])
                     yn.append(detection[objDetect][ARRAY_OBJECT_DETECT][Yi_YOLO])
@@ -125,8 +108,9 @@ class TinyYolo:
                     cv2.rectangle(self.currentImage, p1, p2, COLORS[name], 2)
                     cv2.putText(self.currentImage, name, pname, cv2.FONT_HERSHEY_SIMPLEX, 0.5, COLORS[name])
 
-                cv2.imshow('tiny yolo detect', self.currentImage)
+                cv2.imshow('Prediction', self.currentImage)
                 cv2.waitKey(1)
+                rospy.spinOnce()
                 self.rate.sleep()
 
 

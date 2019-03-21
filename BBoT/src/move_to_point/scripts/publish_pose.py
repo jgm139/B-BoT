@@ -7,40 +7,35 @@ import tf
 import os, sys
 import actionlib
 
-from geometry_msgs.msg import PoseStamped
-from gazebo_msgs.msg import ModelStates
+from geometry_msgs.msg import Point
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 from tf import TransformListener
 
-def move_to_point_client(tiago_orientation):
+def move_to_point_client(object_position, tiago_orientation):
 
-    print("Action client...")
+    rospy.loginfo("Action client...")
     client = actionlib.SimpleActionClient('move_base', MoveBaseAction)
 
     client.wait_for_server()
 
     goal = MoveBaseGoal()
-
-    #param = rospy.get_param("gazebo/obj")
     
     goal.target_pose.header.frame_id = "map"
     goal.target_pose.header.stamp = rospy.Time.now()
-    #goal.target_pose.pose.position.x = param['position']['x']-0.35
-    #goal.target_pose.pose.position.y = param['position']['y']-0.35
-    goal.target_pose.pose.position.x = -2
-    goal.target_pose.pose.position.y = -2
+    goal.target_pose.pose.position.x = object_position.x-0.35
+    goal.target_pose.pose.position.y = object_position.y-0.35
     goal.target_pose.pose.position.z = 0
     goal.target_pose.pose.orientation.x = tiago_orientation[0]
     goal.target_pose.pose.orientation.y = tiago_orientation[1]
     goal.target_pose.pose.orientation.z = tiago_orientation[2]
     goal.target_pose.pose.orientation.w = tiago_orientation[3]
 
-    print(goal.target_pose.pose)
+    rospy.loginfo(goal.target_pose.pose)
 
-    print("Sending goal...")
+    rospy.loginfo("Sending goal...")
     client.send_goal(goal)
 
-    print("Waiting for result...")
+    rospy.loginfo("Waiting for result...")
     wait = client.wait_for_result()
 
     if not wait:
@@ -58,18 +53,17 @@ def main(args):
 
     listener = tf.TransformListener()
     try:
-        #while not listener.frameExists("/base_footprint") and listener.frameExists("/map"):
         listener.waitForTransform('/map','/base_footprint', rospy.Time(), rospy.Duration(4.0))
 
         (trans, rot) = listener.lookupTransform('/map','/base_footprint',rospy.Time())
-        
-        #print trans, rot
 
-        move_to_point_client(rot)
+        pos = rospy.wait_for_message("/gazebo_pose_obj", Point)
+
+        move_to_point_client(pos,rot)
 
     except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException) as e:
-        print(e)
+        rospy.logerr(e)
     except rospy.ROSInterruptException:
-        print("program interrupted before completion", file=sys.stderr)
+        rospy.loginfo("Program interrupted before completion", file=sys.stderr)
 
 main(sys.argv)

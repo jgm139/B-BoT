@@ -1,0 +1,4 @@
+<launch>
+    <arg name="target_object" />
+    <node pkg="get_gazebo_obj" type="gazebo_pose.py" name="get_gazebo_obj_node" args="$(arg target_object)" output="screen" required="true" />
+</launch>

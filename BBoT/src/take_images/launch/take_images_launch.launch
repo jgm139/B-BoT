@@ -1,0 +1,11 @@
+<launch>
+    <include file="$(find tiago_gazebo)/launch/tiago_gazebo.launch">
+        <arg name="world" value="house"/>
+        <arg name="public_sim" value="true"/>
+        <arg name="robot" value="steel"/>
+    </include>
+
+    <include file="$(find look_to_point)/launch/look_to_point.launch" />
+    
+    <node pkg="take_images" type="camera_subscriber.py" name="take_images_node" output="screen" required="true" />
+</launch>

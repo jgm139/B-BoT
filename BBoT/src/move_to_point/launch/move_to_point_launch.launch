@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="move_to_point" type="publish_pose.py" name="move_to_point_node" output="screen" required="true" />
+</launch>
