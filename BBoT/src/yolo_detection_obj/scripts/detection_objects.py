@@ -110,7 +110,6 @@ class TinyYolo:
 
                 cv2.imshow('Prediction', self.currentImage)
                 cv2.waitKey(1)
-                rospy.spinOnce()
                 self.rate.sleep()
 
 
