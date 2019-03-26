@@ -21,3 +21,4 @@ BBoT/src/rviz_plugin_covariance/
 BBoT/src/simple_grasping_action/
 BBoT/src/tf_lookup/
 BBoT/src/tiago_*
+BBoT/src/assets/*
