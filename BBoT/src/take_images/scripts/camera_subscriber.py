@@ -10,18 +10,18 @@ from cv_bridge import CvBridge, CvBridgeError
 
 class TakeImageNode:
     def __init__(self):
-        rospy.loginfo("Initialization of TakeImageNode")
+        rospy.loginfo("Inicializando el nodo TakeImage")
         self.bridge = CvBridge()
-        rospy.loginfo("Setting up subscriber: /xtion/rgb/image_raw")
+        rospy.loginfo("Subscriber: /xtion/rgb/image_raw")
         self.sub = rospy.Subscriber('/xtion/rgb/image_raw', Image, self.take_images_callback)
-        rospy.loginfo("Setting up publisher: /mobile_base_controller/cmd_vel")
+        rospy.loginfo("Publisher: /mobile_base_controller/cmd_vel")
         self.move = rospy.Publisher('/mobile_base_controller/cmd_vel', Twist, queue_size=1)
 
         self.rate = rospy.Rate(5)
         self.lastImageTaken = None
         self.numImage = 0
 
-        rospy.loginfo("Images 608x608")
+        rospy.loginfo("Imágenes de 608x608")
         self.width = 608
         self.height = 608
         self.photo = False
@@ -40,7 +40,7 @@ class TakeImageNode:
                 
                 self.lastImageTaken = cv2.resize(cv_image, (self.width, self.height))
                 fileName = "/home/juliagm/Documentos/B-BoT/dataset/Images/001/" + str(self.numImage) + ".jpg"
-                rospy.loginfo("Saving the last photography " + fileName)
+                rospy.loginfo("Guardando última foto en  " + fileName)
                 cv2.imwrite(fileName, self.lastImageTaken)
 
                 self.numImage+=1
@@ -59,7 +59,7 @@ class TakeImageNode:
                     if event.type == QUIT: 
                         pygame.quit()
                         sys.exit()
-                        rospy.signal_shutdown('Bye, bye human')
+                        rospy.signal_shutdown('¡Hasta pronto!')
 
                     if event.type == KEYDOWN and event.key == 119: # W - straight
                         move_cmd.linear.x += 0.65
@@ -84,7 +84,7 @@ class TakeImageNode:
                 self.move.publish(move_cmd)
 
         except rospy.ROSInterruptException:
-            rospy.loginfo("Program interrupted before completion", file=sys.stderr)  
+            rospy.loginfo("Programa interrumpido ", file=sys.stderr)  
     
 
 def main(args):
@@ -92,7 +92,7 @@ def main(args):
 
     pygame.init()
     pygame.display.set_mode((300,250))
-    pygame.display.set_caption('Click here and move TIAGo!')
+    pygame.display.set_caption('¡Pulsa para mover a TIAGo!')
 
     tI = TakeImageNode()
     tI.run()
