@@ -3,7 +3,7 @@ BBoT/logs
 BBoT/build
 BBoT/devel
 BBoT/.catkin_tools/*
-BBoT/include/darknet/*
+BBoT/include/*
 BBoT/src/aruco_ros/
 BBoT/src/backward_ros/
 BBoT/src/ddynamic_reconfigure_python/
