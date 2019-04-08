@@ -43,51 +43,52 @@ class TinyYolo:
         self.filenameImage = REPOSITORY + "BBoT/src/assets/prediction.jpg"
 
         self.currentImage = None
+        self.newImage = False
 
         self.tiny_yolo_net = None
         self.tiny_yolo_meta = None
     
-        self.tiny_yolo()
-        self.rate = rospy.Rate(5)
-
-    def tiny_yolo(self):
         self.tiny_yolo_net = dn.load_net(self.path_cfg, self.path_weights, 0)
         self.tiny_yolo_meta = dn.load_meta(self.path_data)
+
+        self.rate = rospy.Rate(5)        
 
     def take_images_callback(self, data):
         try:
             self.currentImage = self.bridge.imgmsg_to_cv2(data, "bgr8")
             cv2.imwrite(self.filenameImage, self.currentImage)
+            self.newImage = True
         except CvBridgeError as e:
             rospy.logerr(e)
   
     def run(self):
+
+        onames = []
+        predictions = []
+        xn = []
+        yn = []
+        widths = []
+        heights = []
+
         while not rospy.is_shutdown():
-            if(self.currentImage is not None):
+            if self.newImage:
                 detection = dn.detect(self.tiny_yolo_net, self.tiny_yolo_meta, self.filenameImage)
-                
-                onames = []
-                predictions = []
-                xn = []
-                yn = []
-                widths = []
-                heights = []
 
-                print("=============================================")
-                for objDetect in range(len(detection)):
-                    print("DETECTED OBJECT: " + str(detection[objDetect][NAME_YOLO]))
-                    print("PREDICTION: " + str(detection[objDetect][PRECISION_YOLO]*100) + "%")
-                    onames.append(detection[objDetect][NAME_YOLO])
-                    predictions.append(detection[objDetect][PRECISION_YOLO])
+                print "============================================="
+                for objDetect in detection:
+                    print "DETECTED OBJECT: ", objDetect[NAME_YOLO]
+                    print "PREDICTION: ", objDetect[PRECISION_YOLO]*100, "%"
+                    onames.append(objDetect[NAME_YOLO])
+                    predictions.append(objDetect[PRECISION_YOLO])
 
-                    print("x: " + str(detection[objDetect][ARRAY_OBJECT_DETECT][Xi_YOLO]) + " / y: " + str(detection[objDetect][ARRAY_OBJECT_DETECT][Yi_YOLO]))
-                    print("w: " + str(detection[objDetect][ARRAY_OBJECT_DETECT][Wi_YOLO]) + " / h: " + str(detection[objDetect][ARRAY_OBJECT_DETECT][Hi_YOLO]))
+                    print "x: ", objDetect[ARRAY_OBJECT_DETECT][Xi_YOLO], " / y: ", objDetect[ARRAY_OBJECT_DETECT][Yi_YOLO]
+                    print "w: ", objDetect[ARRAY_OBJECT_DETECT][Wi_YOLO], " / h: ", objDetect[ARRAY_OBJECT_DETECT][Hi_YOLO]
 
-                    xn.append(detection[objDetect][ARRAY_OBJECT_DETECT][Xi_YOLO])
-                    yn.append(detection[objDetect][ARRAY_OBJECT_DETECT][Yi_YOLO])
-                    widths.append(detection[objDetect][ARRAY_OBJECT_DETECT][Wi_YOLO])
-                    heights.append(detection[objDetect][ARRAY_OBJECT_DETECT][Hi_YOLO])
-                    print("=============================================")
+                    xn.append(objDetect[ARRAY_OBJECT_DETECT][Xi_YOLO])
+                    yn.append(objDetect[ARRAY_OBJECT_DETECT][Yi_YOLO])
+                    widths.append(objDetect[ARRAY_OBJECT_DETECT][Wi_YOLO])
+                    heights.append(objDetect[ARRAY_OBJECT_DETECT][Hi_YOLO])
+                    print "============================================="
 
                     data = MSGYolo()
                     data.names = onames
@@ -108,9 +109,18 @@ class TinyYolo:
                     cv2.rectangle(self.currentImage, p1, p2, COLORS[name], 2)
                     cv2.putText(self.currentImage, name, pname, cv2.FONT_HERSHEY_SIMPLEX, 0.5, COLORS[name])
 
+                del onames [:]
+                del predictions [:]
+                del xn [:]
+                del yn [:]
+                del widths [:]
+                del heights [:]
+
                 cv2.imshow('Prediction', self.currentImage)
                 cv2.waitKey(1)
                 self.rate.sleep()
+
+            self.newImage = False    
 
 
 def main(args):
