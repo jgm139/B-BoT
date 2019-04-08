@@ -12,7 +12,7 @@ from tf import TransformListener
 class Picker:
 
     MAX_GRIPPER_JOINT = 0.044
-    CENTER_GRIPPER = 0.02
+    CENTER_GRIPPER = 0.018
     ARM_3_DOWN = -1.37
     ARM_3_UP = -1.8
 
@@ -21,7 +21,6 @@ class Picker:
         self.rate = rospy.Rate(1.0)
         self.rate.sleep()
         #self.target_object = rospy.wait_for_message("/gazebo_pose_obj", Point)
-
         self.target_object = Point(0.5,3.5,0.8155)
 
         self.arm_torso_group = moveit_commander.MoveGroupCommander("arm_torso")
@@ -31,13 +30,6 @@ class Picker:
         self.gripper_joints_values = self.gripper_group.get_current_joint_values()
         
         self.robot = moveit_commander.RobotCommander()
-        """
-        print "-----------------------------"
-        print "TIAGo group names: ", self.robot.get_group_names()
-        print "Arm&Torso group names: ", self.arm_torso_group.get_joints()
-        print "Gripper group names: ", self.gripper_group.get_joints()
-        print "-----------------------------"
-        """
 
     def open_gripper(self):
 
@@ -108,6 +100,7 @@ class Picker:
                 rospy.logerr(e)
 
         rospy.loginfo("Comenzando agarre del objeto...")
+        self.open_gripper()
         self.arm_torso_joints_values[3] = self.ARM_3_DOWN
         self.arm_torso_group.go(joints=self.arm_torso_joints_values)
         self.close_gripper()

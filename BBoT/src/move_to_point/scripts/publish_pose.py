@@ -22,8 +22,11 @@ def move_to_point_client(object_position, tiago_orientation):
     
     goal.target_pose.header.frame_id = "map"
     goal.target_pose.header.stamp = rospy.Time.now()
-    goal.target_pose.pose.position.x = object_position.x-0.35
-    goal.target_pose.pose.position.y = object_position.y-0.35
+    goal.target_pose.pose.position.x = object_position.x
+    if goal.target_pose.pose.position.y>0:
+        goal.target_pose.pose.position.y = object_position.y-0.35
+    else:    
+        goal.target_pose.pose.position.y = object_position.y+0.35
     goal.target_pose.pose.position.z = 0
     goal.target_pose.pose.orientation.x = tiago_orientation[0]
     goal.target_pose.pose.orientation.y = tiago_orientation[1]
@@ -52,8 +55,9 @@ def main(args):
     rospy.init_node('move_to_point_node')
 
     listener = tf.TransformListener()
+    rospy.Rate(4).sleep()
     try:
-        listener.waitForTransform('/map','/base_footprint', rospy.Time(), rospy.Duration(4.0))
+        listener.waitForTransform('/map','/base_footprint', rospy.Time(), rospy.Duration(1.0))
 
         (trans, rot) = listener.lookupTransform('/map','/base_footprint',rospy.Time())
 

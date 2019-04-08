@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 import rospy
 import cv2
-import os, sys
+import os, sys, re
 
 from yolo_msg.msg import MSGYolo
 from gazebo_msgs.msg import ModelStates
@@ -34,10 +34,12 @@ class DetectedGazeboObj:
         self.model_states_poses = data.pose
 
     def search_target_pose(self):
-        while not rospy.is_shutdown():
-            if any(self.TARGET_OBJECT in s for s in self.AVAILABLE_OBJECTS):
+        split_target = re.match(r"([a-z]+)([0-9]+)", self.TARGET_OBJECT, re.I).group(1)
 
-                if any(self.TARGET_OBJECT in s for s in self.detected_obj):
+        while not rospy.is_shutdown():
+            if any(split_target in s for s in self.AVAILABLE_OBJECTS):
+
+                if any(split_target in s for s in self.detected_obj):
                     index_name = self.model_states_names.index(self.TARGET_OBJECT)
                     self.target_point = self.model_states_poses[index_name].position
 
