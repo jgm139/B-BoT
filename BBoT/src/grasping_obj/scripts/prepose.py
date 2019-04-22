@@ -10,8 +10,7 @@ from geometry_msgs.msg import Point
 from tf import TransformListener
 
 class Prepose:
-    TORSO = 1.5
-    ARM_JOINTS = [0.25, 0, -2, 1.5, 0, 0, 0]
+    ARM_TORSO_JOINTS = [1.5, 0.25, 0, -2, 1.5, 0, 0, 0]
 
     def __init__(self):
         self.rate = rospy.Rate(1.0)
@@ -22,8 +21,8 @@ class Prepose:
 
     def prepose(self):
 
-        for i in range(0, len(self.ARM_JOINTS)):
-            self.arm_torso_joints_values[i] = self.ARM_JOINTS[i]
+        for i in range(0, len(self.ARM_TORSO_JOINTS)):
+            self.arm_torso_joints_values[i] = self.ARM_TORSO_JOINTS[i]
 
         self.arm_torso_group.go(joints=self.arm_torso_joints_values)
 
