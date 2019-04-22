@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="grasping_obj" type="prepose.py" name="prepose_node" output="screen" required="true" />
+</launch>

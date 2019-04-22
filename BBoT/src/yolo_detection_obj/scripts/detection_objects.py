@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+
 import rospy
 import cv2
 import os, sys
@@ -14,22 +15,22 @@ sys.path.append(REPOSITORY+INCLUDE_DARKNET)
 
 import darknet as dn
 
-# Array que devuelve la posicion de la funcion detect
-# (name, precision, array_objeto_detectado)
-NAME_YOLO = 0
-PRECISION_YOLO = 1
-ARRAY_OBJECT_DETECT = 2
-
-# POSICION DEL OBJETO (x, y, w, h)
-Xi_YOLO = 0
-Yi_YOLO = 1
-Wi_YOLO = 2
-Hi_YOLO = 3
-
-# Generate different colors for different classes 
-COLORS = {'coke_can': (255,0,0), 'beer': (0,255,0), 'pringles': (0,0,255)}
 
 class TinyYolo:
+    # Array que devuelve la posicion de la funcion detect
+    # (name, precision, array_objeto_detectado)
+    NAME_OBJECT = 0
+    PRECISION_OBJECT = 1
+    ARRAY_OBJECT_DETECT = 2
+
+    # POSICION DEL OBJETO (x, y, w, h)
+    Xi_OBJECT = 0
+    Yi_OBJECT = 1
+    Wi_OBJECT = 2
+    Hi_OBJECT = 3
+
+    # Generate different colors for different classes 
+    COLORS = {'coke_can': (255,0,0), 'beer': (0,255,0), 'pringles': (0,0,255)}
 
     def __init__(self):
         self.bridge = CvBridge()
@@ -76,18 +77,18 @@ class TinyYolo:
 
                 print "============================================="
                 for objDetect in detection:
-                    print "DETECTED OBJECT: ", objDetect[NAME_YOLO]
-                    print "PREDICTION: ", objDetect[PRECISION_YOLO]*100, "%"
-                    onames.append(objDetect[NAME_YOLO])
-                    predictions.append(objDetect[PRECISION_YOLO])
+                    print "DETECTED OBJECT: ", objDetect[self.NAME_OBJECT]
+                    print "PREDICTION: ", objDetect[self.PRECISION_OBJECT]*100, "%"
+                    onames.append(objDetect[self.NAME_OBJECT])
+                    predictions.append(objDetect[self.PRECISION_OBJECT])
 
-                    print "x: ", objDetect[ARRAY_OBJECT_DETECT][Xi_YOLO], " / y: ", objDetect[ARRAY_OBJECT_DETECT][Yi_YOLO]
-                    print "w: ", objDetect[ARRAY_OBJECT_DETECT][Wi_YOLO], " / h: ", objDetect[ARRAY_OBJECT_DETECT][Hi_YOLO]
+                    print "x: ", objDetect[self.ARRAY_OBJECT_DETECT][self.Xi_OBJECT], " / y: ", objDetect[self.ARRAY_OBJECT_DETECT][self.Yi_OBJECT]
+                    print "w: ", objDetect[self.ARRAY_OBJECT_DETECT][self.Wi_OBJECT], " / h: ", objDetect[self.ARRAY_OBJECT_DETECT][self.Hi_OBJECT]
 
-                    xn.append(objDetect[ARRAY_OBJECT_DETECT][Xi_YOLO])
-                    yn.append(objDetect[ARRAY_OBJECT_DETECT][Yi_YOLO])
-                    widths.append(objDetect[ARRAY_OBJECT_DETECT][Wi_YOLO])
-                    heights.append(objDetect[ARRAY_OBJECT_DETECT][Hi_YOLO])
+                    xn.append(objDetect[self.ARRAY_OBJECT_DETECT][self.Xi_OBJECT])
+                    yn.append(objDetect[self.ARRAY_OBJECT_DETECT][self.Yi_OBJECT])
+                    widths.append(objDetect[self.ARRAY_OBJECT_DETECT][self.Wi_OBJECT])
+                    heights.append(objDetect[self.ARRAY_OBJECT_DETECT][self.Hi_OBJECT])
                     print "============================================="
 
                     data = MSGYolo()
@@ -106,8 +107,8 @@ class TinyYolo:
                     p2 = (int(xn[i]+(widths[i]/2)), int(yn[i]+(heights[i]/2)))
                     pname = (int(xn[i]+(widths[i]/2)), int(yn[i]-(heights[i]/2)-5))
 
-                    cv2.rectangle(self.currentImage, p1, p2, COLORS[name], 2)
-                    cv2.putText(self.currentImage, name, pname, cv2.FONT_HERSHEY_SIMPLEX, 0.5, COLORS[name])
+                    cv2.rectangle(self.currentImage, p1, p2, self.COLORS[name], 2)
+                    cv2.putText(self.currentImage, name, pname, cv2.FONT_HERSHEY_SIMPLEX, 0.5, self.COLORS[name])
 
                 del onames [:]
                 del predictions [:]

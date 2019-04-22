@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="grasping_obj" type="picker.py" name="grasping_obj_node" output="screen" required="true" />
+</launch>
