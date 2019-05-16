@@ -17,12 +17,12 @@
 
 ## Introducción
 
-BBoT es el proyecto que engloba las funcionalidades que se describen a continuación:
+**BBoT** es el proyecto que engloba las funcionalidades que se describen a continuación:
 - Reconocimiento de los distintos objetos que pueda requerir el usuario en un medio doméstico.
 - Trazar una trayectoria desde el punto origen donde se encuentra el robot hasta el punto destino donde se encuentra el objeto.
 - Indicar y proporcionar dicho objeto al usuario haciendo uso de una mano robótica integrada en el asistente.
 
-BBoT está estructurado y desarrollado haciendo uso de ROS,
+**BBoT** está estructurado y desarrollado haciendo uso de **ROS**,
 por lo tanto, cada archivo representará a un Nodo que publicará o se subscribirá a un
 Tópico o solicitará información a un Servicio o Acción.
 Este proyecto pretende simular un apoyo en el hogar para las personas mayores que ven
@@ -55,7 +55,6 @@ $ roslaunch tiago_gazebo tiago_gazebo.launch public_sim:=true robot:=steel world
 <br>
 
 ## Nodos ROS
--------------
 
 ### Nodo tomador de imágenes
 
@@ -91,8 +90,6 @@ $ source devel/setup.bash
 $ roslaunch yolo_detection_obj yolo_detection_launch_file.launch
 ```
 
-<br>
-
 En cuanto **TIAGo** empiece a detectar objetos, se mostrará mediante una ventana. En ella aparecerán el rectángulo y el nombre del objeto que hemos detectado:
 
 ![alt text](doc/Yolo_Detection/ejemplo1.png "Nodo detector de objetos")
@@ -102,8 +99,7 @@ En cuanto **TIAGo** empiece a detectar objetos, se mostrará mediante una ventan
 
 ### Creación del mapa con gmapping
 
-Para poder utilizar la navegación autónoma es necesario hacer un mapeado del entorno
-por el que se va a mover TIAGo. Con los comandos e indicaciones que se dan a continuación, crearé un mapa láser de house.world.
+Para poder utilizar la navegación autónoma es necesario hacer un mapeado del entorno por el que se va a mover **TIAGo**. Con los comandos e indicaciones que se dan a continuación, crearé un mapa láser de house.world.
 
 Abrimos una consola, nos movemos hasta la carpeta del proyecto e indicamos la ruta de las variables generadas como he indicado en los puntos anteriores. Tras esto, lanzamos el nodo para el mapeado:
 
@@ -112,7 +108,7 @@ Abrimos una consola, nos movemos hasta la carpeta del proyecto e indicamos la ru
 $ source devel/setup.bash
 $ roslaunch navigation mapping_public.launch
 ```
-<br>
+
 Abrimos una segunda consola y lanzamos el nodo de teleoperación por teclado:
 
 *Terminal 2*
@@ -121,13 +117,9 @@ $ source devel/setup.bash
 $ rosrun key_teleop key_teleop.py
 ```
 
-<br>
-
 Junto con Gazebo se abrirá RVIZ que irá mostrando el proceso del mapeado:
 
 ![alt text](doc/Mapping/Mapping.png "Creación del mapa con gmapping")
-
-<br>
 
 Cuando se haya finalizado el *mapeado* presionamos `q` y guardamos el mapa con el siguiente comando:
 
@@ -151,8 +143,6 @@ $ source devel/setup.bash
 $ roslaunch navigation navigation_public.launch
 ```
 
-<br>
-
 Se nos abrirá Gazebo con la simulación y RVIZ con el mapa construido en el paso anterior:
 
 ![alt text](doc/Localization/1.png "Localización y planificación de trayectorias")
@@ -168,8 +158,6 @@ $ source devel/setup.bash
 $ rosservice call /global_localization "{}"
 ```
 
-<br>
-
 Esto provoca que el sistema probabilístico AMCL difunda partículas por todo el mapa como se puede apreciar en la siguiente foto:
 
 ![alt text](doc/Localization/2.png "AMCL - Localización global")
@@ -181,8 +169,6 @@ Una buena manera para ayudar al filtro de partículas a converger hacia la posic
 $ source devel/setup.bash
 $ rosrun key_teleop key_teleop.py
 ```
-
-<br>
 
 Ahora comenzamos a hacer que **TIAGo** rote sobre sí mismo, a moverlo con cuidado por el entorno, etc. y veremos que la nube de partículas empieza a juntarse en un determinado punto:
 
@@ -226,7 +212,7 @@ $ roslaunch get_gazebo_obj get_gazebo_obj_launch.launch
 target_object:=[coke_can|beer|pringles]
 ```
 
-El nodo comenzará a analizar si en la visión de TIAGo se encuentra el objeto indicado.
+El nodo comenzará a analizar si en la visión de **TIAGo** se encuentra el objeto indicado.
 
 --------
 
@@ -287,9 +273,5 @@ $ roslaunch grasping_obj picker_launch.launch
 
 Tras esto, comenzará el proceso de obtención del objeto:
 
-![alt text](doc/Picker/1.png "AMCL")
-![alt text](doc/Picker/2.png "AMCL")
-![alt text](doc/Picker/3.png "AMCL")
-![alt text](doc/Picker/4.png "AMCL")
-![alt text](doc/Picker/5.png "AMCL")
+![alt text](doc/Picker/Picker.png "Picker")
 
