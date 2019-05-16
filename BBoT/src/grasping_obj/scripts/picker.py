@@ -20,8 +20,7 @@ class Picker:
         self.listener = tf.TransformListener()
         self.rate = rospy.Rate(1.0)
         self.rate.sleep()
-        #self.target_object = rospy.wait_for_message("/gazebo_pose_obj", Point)
-        self.target_object = Point(0.5,3.5,0.8155)
+        self.target_object = rospy.wait_for_message("/gazebo_pose_obj", Point)
 
         self.arm_torso_group = moveit_commander.MoveGroupCommander("arm_torso")
         self.arm_torso_joints_values = self.arm_torso_group.get_current_joint_values()
@@ -51,8 +50,7 @@ class Picker:
         self.listener.waitForTransform('/map','/gripper_grasping_frame', rospy.Time(), rospy.Duration(1.0))
 
         running = True
-        theta_x = 0.05
-        theta_y = 0.05
+        theta = 0.05
 
         joint_1 = self.arm_torso_joints_values[1]
         joint_4 = self.arm_torso_joints_values[4]
@@ -71,7 +69,7 @@ class Picker:
                 dif_x = abs(object_x-gripper[0])
                 dif_y = abs(object_y-gripper[1])
 
-                if dif_x<=theta_x and dif_y<=theta_y:
+                if dif_x<=theta and dif_y<=theta:
                     rospy.loginfo("------------FINALIZADO------------")
                     running = False
                 else:

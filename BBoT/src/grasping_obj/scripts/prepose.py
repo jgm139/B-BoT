@@ -19,9 +19,7 @@ class Prepose:
     def prepose(self):
 
         for i in range(0, len(self.ARM_TORSO_JOINTS)):
-            print i, ", ", self.ARM_TORSO_JOINTS[i]
             self.arm_torso_joints_values[i] = self.ARM_TORSO_JOINTS[i]
-            print self.arm_torso_joints_values[i]
 
         self.arm_torso_group.go(joints=self.arm_torso_joints_values)
 
