@@ -58,8 +58,6 @@ $ roslaunch tiago_gazebo tiago_gazebo.launch public_sim:=true robot:=steel world
 
 ### Nodo tomador de imágenes
 
->Lanzar el nodo **take_images_node**
-
 Para ejecutar el nodo simplemente debemos usar el comando:
 
 ```
@@ -82,8 +80,6 @@ En el fichero `launch` de este nodo lanzo también el paquete _look_to_point_ y 
 Este nodo se puede lanzar con cualquier simulación de **TIAGo**, en mi caso lo necesito cuando ejecuto la _navegación autónoma_. Más adelante explicaré qué comandos usar y cómo configurarla.
 
 Para lanzarlo debemos hacerlo en una nueva terminal o pestaña con el comando:
-
->Lanzar el nodo **yolo_detection_node**
 
 ```
 $ source devel/setup.bash
