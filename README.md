@@ -23,10 +23,9 @@
 - Indicar y proporcionar dicho objeto al usuario haciendo uso de una mano robótica integrada en el asistente.
 
 **BBoT** está estructurado y desarrollado haciendo uso de **ROS**,
-por lo tanto, cada archivo representará a un Nodo que publicará o se subscribirá a un
-Tópico o solicitará información a un Servicio o Acción.
-Este proyecto pretende simular un apoyo en el hogar para las personas mayores que ven
-reducidas sus facultades físicas debido al desarrollo de la demencia senil.
+por lo tanto, cada archivo representará a un Nodo que publicará o se subscribirá a un _Tópico_ o solicitará información a un _Servicio_ o _Acción_.
+
+Este proyecto pretende simular un apoyo en el hogar para las personas mayores que ven reducidas sus facultades físicas debido al desarrollo de la demencia senil.
 
 <br>
 
@@ -65,7 +64,7 @@ $ source devel/setup.bash
 $ roslaunch take_images take_images_launch_file.launch
 ```
 
-Una vez que se haya cargado todo, nos aparecerá Gazebo con la simulación del mundo que le hayamos indicado, en este caso _house.world_, una ventana con la visión de los ojos
+Una vez que se haya cargado todo, nos aparecerá **Gazebo** con la simulación del mundo que le hayamos indicado, en este caso `house.world`, una ventana con la visión de los ojos
 de **TIAGo** y la ventana _pygame_ para mover la base de éste:
 
 ![alt text](doc/Take_Images/Take_Images.png "Nodo tomador de imágenes")
@@ -113,7 +112,7 @@ $ source devel/setup.bash
 $ rosrun key_teleop key_teleop.py
 ```
 
-Junto con Gazebo se abrirá RVIZ que irá mostrando el proceso del mapeado:
+Junto con **Gazebo** se abrirá **RVIZ** que irá mostrando el proceso del mapeado:
 
 ![alt text](doc/Mapping/Mapping.png "Creación del mapa con gmapping")
 
@@ -123,7 +122,7 @@ Cuando se haya finalizado el *mapeado* presionamos `q` y guardamos el mapa con e
 $ source devel/setup.bash
 $ rosservice call /pal_map_manager/save_map "directory: ''"
 ```
-El servicio guardará el mapa en la ruta *~/.pal/tiago_maps/config*.
+El servicio guardará el mapa en la ruta `~/.pal/tiago_maps/config`.
 
 <br>
 
@@ -139,7 +138,7 @@ $ source devel/setup.bash
 $ roslaunch navigation navigation_public.launch
 ```
 
-Se nos abrirá Gazebo con la simulación y RVIZ con el mapa construido en el paso anterior:
+Se nos abrirá **Gazebo** con la simulación y **RVIZ** con el mapa construido en el paso anterior:
 
 ![alt text](doc/Localization/1.png "Localización y planificación de trayectorias")
 
