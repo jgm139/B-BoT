@@ -67,7 +67,7 @@ $ roslaunch take_images take_images_launch_file.launch
 Una vez que se haya cargado todo, nos aparecerá **Gazebo** con la simulación del mundo que le hayamos indicado, en este caso `house.world`, una ventana con la visión de los ojos
 de **TIAGo** y la ventana _pygame_ para mover la base de éste:
 
-![alt text](doc/Take_Images/Take_Images.png "Nodo tomador de imágenes")
+![alt text](doc/Nodo_tomador_imagenes/Take_Images.png "Nodo tomador de imágenes")
 
 
 <br>
@@ -87,7 +87,7 @@ $ roslaunch yolo_detection_obj yolo_detection_launch_file.launch
 
 En cuanto **TIAGo** empiece a detectar objetos, se mostrará mediante una ventana. En ella aparecerán el rectángulo y el nombre del objeto que hemos detectado:
 
-![alt text](doc/Yolo_Detection/ejemplo1.png "Nodo detector de objetos")
+![alt text](doc/Nodo_detector_objetos/Ejemplo_03.png "Nodo detector de objetos")
 
 
 <br>
@@ -114,7 +114,7 @@ $ rosrun key_teleop key_teleop.py
 
 Junto con **Gazebo** se abrirá **RVIZ** que irá mostrando el proceso del mapeado:
 
-![alt text](doc/Mapping/Mapping.png "Creación del mapa con gmapping")
+![alt text](doc/Creacion_mapa_gmapping/Mapping.png "Creación del mapa con gmapping")
 
 Cuando se haya finalizado el *mapeado* presionamos `q` y guardamos el mapa con el siguiente comando:
 
@@ -140,7 +140,7 @@ $ roslaunch navigation navigation_public.launch
 
 Se nos abrirá **Gazebo** con la simulación y **RVIZ** con el mapa construido en el paso anterior:
 
-![alt text](doc/Localization/1.png "Localización y planificación de trayectorias")
+![alt text](doc/Localizacion/Ejemplo_01_1.png "Localización y planificación de trayectorias")
 
 Como se puede observar en las imágenes, el robot aparece en una posición del mundo que no corresponde con el origen del mapa (_x: 0.0, y: 0.0_). El sistema de localización asume que el robot está en el conjunto de partículas (_Particle cloud_) que representan la
 posible pose del robot.
@@ -155,7 +155,7 @@ $ rosservice call /global_localization "{}"
 
 Esto provoca que el sistema probabilístico AMCL difunda partículas por todo el mapa como se puede apreciar en la siguiente foto:
 
-![alt text](doc/Localization/2.png "AMCL - Localización global")
+![alt text](doc/Localizacion/Ejemplo_01_2.png "AMCL - Localización global")
 
 Una buena manera para ayudar al filtro de partículas a converger hacia la posición correcta es mover el robot. En la misma terminal que hemos usado para llamar al servicio anterior, tecleamos:
 
@@ -167,9 +167,9 @@ $ rosrun key_teleop key_teleop.py
 
 Ahora comenzamos a hacer que **TIAGo** rote sobre sí mismo, a moverlo con cuidado por el entorno, etc. y veremos que la nube de partículas empieza a juntarse en un determinado punto:
 
-![alt text](doc/Localization/3.png "AMCL - Localización global")
-![alt text](doc/Localization/4.png "AMCL - Localización global")
-![alt text](doc/Localization/5.png "AMCL - Localización global")
+![alt text](doc/Localizacion/Ejemplo_01_3.png "AMCL - Localización global")
+![alt text](doc/Localizacion/Ejemplo_01_4.png "AMCL - Localización global")
+![alt text](doc/Localizacion/Ejemplo_01_5.png "AMCL - Localización global")
 
 Es preferible limpiar los _mapas de costes_ ya que contienen datos erróneos debido a la mala localización del robot:
 
@@ -181,7 +181,7 @@ $ rosservice call /move_base/clear_costmaps "{}"
 
 Ahora el mapa de costes solo tiene en cuenta los obstáculos del mapa estático y el sistema está listo para realizar la navegación:
 
-![alt text](doc/Localization/6.png "AMCL - Localización global")
+![alt text](doc/Localizacion/Ejemplo_01_6.png "AMCL - Localización global")
 
 
 <br>
@@ -225,11 +225,11 @@ $ roslaunch move_to_point move_to_point_launch.launch
 
 A continuación, veremos que en **RVIZ** ha aparecido una flecha en el mapa. Esta flecha indica la posición y orientación que debe tomar **TIAGo**. Poco a poco irá haciendo el recorrido origen-destino:
 
-![alt text](doc/Move_to_point/1.png "AMCL")
-![alt text](doc/Move_to_point/2.png "AMCL")
-![alt text](doc/Move_to_point/3.png "AMCL")
-![alt text](doc/Move_to_point/4.png "AMCL")
-![alt text](doc/Move_to_point/5.png "AMCL")
+![alt text](doc/Nodo_ir_a/Ejemplo_02_1.png "AMCL")
+![alt text](doc/Nodo_ir_a/Ejemplo_02_2.png "AMCL")
+![alt text](doc/Nodo_ir_a/Ejemplo_02_3.png "AMCL")
+![alt text](doc/Nodo_ir_a/Ejemplo_02_4.png "AMCL")
+![alt text](doc/Nodo_ir_a/Ejemplo_02_5.png "AMCL")
 
 
 <br>
@@ -249,7 +249,7 @@ $ roslaunch grasping_obj prepose_launch.launch
 
 El robot tomará la siguiente posición:
 
-![alt text](doc/Prepose/Prepose.png "Prepose")
+![alt text](doc/Nodo_prepose/Prepose.png "Prepose")
 
 
 <br>
@@ -268,5 +268,5 @@ $ roslaunch grasping_obj picker_launch.launch
 
 Tras esto, comenzará el proceso de obtención del objeto:
 
-![alt text](doc/Picker/Picker.png "Picker")
+![alt text](doc/Nodo_recolector/Picker.png "Picker")
 
